@@ -1,0 +1,497 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.26)  13 MAY 2016 20:50
+entering extended mode
+**accv2016submission.tex
+
+(D:\左童春个人数据\Project-BuildingDetection\MyPaper\accv2016\accv2016su
+bmission.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+(D:\左童春个人数据\Project-BuildingDetection\MyPaper\accv2016\llncs.cls
+Document Class: llncs 2002/01/28 v2.13 
+ LaTeX document class for Lecture Notes in Computer Science
+(C:\CTEX\MiKTeX\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(C:\CTEX\MiKTeX\tex\latex\base\size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(C:\CTEX\MiKTeX\tex\latex\tools\multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count87
+\mult@box=\box26
+\multicol@leftmargin=\dimen103
+\c@unbalance=\count88
+\c@collectmore=\count89
+\doublecol@number=\count90
+\multicoltolerance=\count91
+\multicolpretolerance=\count92
+\full@width=\dimen104
+\page@free=\dimen105
+\premulticols=\dimen106
+\postmulticols=\dimen107
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count93
+\c@finalcolumnbadness=\count94
+\last@try=\dimen108
+\multicolovershoot=\dimen109
+\multicolundershoot=\dimen110
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+\multicol@sort@counter=\count95
+)
+\c@chapter=\count96
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 360.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 361.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 362.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 363.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 364.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 365.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 366.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 367.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 368.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 369.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 370.
+\tocchpnum=\dimen111
+\tocsecnum=\dimen112
+\tocsectotal=\dimen113
+\tocsubsecnum=\dimen114
+\tocsubsectotal=\dimen115
+\tocsubsubsecnum=\dimen116
+\tocsubsubsectotal=\dimen117
+\tocparanum=\dimen118
+\tocparatotal=\dimen119
+\tocsubparanum=\dimen120
+\@tempcntc=\count97
+\fnindent=\dimen121
+\c@@inst=\count98
+\c@@auth=\count99
+\c@auco=\count100
+\instindent=\dimen122
+\authrun=\box52
+\authorrunning=\toks14
+\tocauthor=\toks15
+\titrun=\box53
+\titlerunning=\toks16
+\toctitle=\toks17
+\c@theorem=\count101
+\c@case=\count102
+\c@conjecture=\count103
+\c@corollary=\count104
+\c@definition=\count105
+\c@example=\count106
+\c@exercise=\count107
+\c@lemma=\count108
+\c@note=\count109
+\c@problem=\count110
+\c@property=\count111
+\c@proposition=\count112
+\c@question=\count113
+\c@solution=\count114
+\c@remark=\count115
+\headlineindent=\dimen123
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(C:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(C:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count116
+))
+\Gin@req@height=\dimen124
+\Gin@req@width=\dimen125
+)
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks19
+\ex@=\dimen126
+))
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen127
+)
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count117
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count118
+\leftroot@=\count119
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count120
+\DOTSCASE@=\count121
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+\big@size=\dimen128
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+
+
+Package amsmath Warning: Unable to redefine math accent \vec.
+
+\macc@depth=\count122
+\c@MaxMatrixCols=\count123
+\dotsspace@=\muskip10
+\c@parentequation=\count124
+\dspbrk@lvl=\count125
+\tag@help=\toks20
+\row@=\count126
+\column@=\count127
+\maxfields@=\count128
+\andhelp@=\toks21
+\eqnshift@=\dimen129
+\alignsep@=\dimen130
+\tagshift@=\dimen131
+\tagwidth@=\dimen132
+\totwidth@=\dimen133
+\lineht@=\dimen134
+\@envbody=\toks22
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+) (C:\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(D:\左童春个人数据\Project-BuildingDetection\MyPaper\accv2016\ruler.sty
+Package: ruler 
+
+(D:\左童春个人数据\Project-BuildingDetection\MyPaper\accv2016\eso-pic.st
+y
+Package: eso-pic 2002/11/16 v1.1b eso-pic (RN)
+
+(D:\左童春个人数据\Project-BuildingDetection\MyPaper\accv2016\cvpr_eso.s
+ty
+
+LaTeX Warning: You have requested package `eso-pic',
+               but the package provides `cvpr_eso'.
+
+Package: cvpr_eso 2011/12/13 v1.00 CVPR ESO based on everyshi
+))
+\cvprrulerbox=\box56
+\cvprrulercount=\count129
+\cvprrulercounttmp=\count130
+\cvprruleroffset=\dimen135
+\cv@lineheight=\dimen136
+\cv@boxheight=\dimen137
+\cv@tmpbox=\box57
+\cv@refno=\count131
+\cv@tot=\count132
+\cv@tmpc@=\count133
+\cv@tmpc=\count134
+) (C:\CTEX\MiKTeX\tex\latex\graphics\color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(C:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(C:\CTEX\MiKTeX\tex\latex\subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip48
+\subfigcapskip=\skip49
+\subfigcaptopadj=\dimen138
+\subfigbottomskip=\skip50
+\subfigcapmargin=\dimen139
+\subfiglabelskip=\skip51
+\c@subfigure=\count135
+\c@lofdepth=\count136
+\c@subtable=\count137
+\c@lotdepth=\count138
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(C:\CTEX\MiKTeX\tex\latex\subfigure\subfigure.cfg)
+\subfig@top=\skip52
+\subfig@bottom=\skip53
+)
+(C:\CTEX\MiKTeX\tex\latex\jknappen\mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(D:\左童春个人数据\Project-BuildingDetection\MyPaper\accv2016\accv2016su
+bmission.aux
+
+LaTeX Warning: Label `fig:InputImage' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:InputImage' multiply defined.
+
+
+LaTeX Warning: Label `fig:GroundTruth' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:GroundTruth' multiply defined.
+
+
+LaTeX Warning: Label `fig:FCN-4s' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:FCN-4s' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+ (C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count139
+\scratchdimen=\dimen140
+\scratchbox=\box58
+\nofMPsegments=\count140
+\nofMParguments=\count141
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count142
+\MPscratchDim=\dimen141
+\MPnumerator=\count143
+\makeMPintoPDFobject=\count144
+\everyMPtoPDFconversion=\toks25
+) ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 29.
+
+(C:\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+) [1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Overfull \hbox (21.54381pt too wide) in paragraph at lines 56--57
+[]\OT1/cmr/m/n/10 In this ar-ti-cle, we pro-pose a dual-supervision ful-ly con-
+vo-lu-tion-al net-work(DSFCN),
+ []
+
+
+Underfull \vbox (badness 5105) has occurred while \output is active []
+
+ [3]
+
+LaTeX Warning: Reference `Noh2015Learning' on page 4 undefined on input line 62
+.
+
+
+LaTeX Warning: Reference `fig:FCN4s-results' on page 4 undefined on input line 
+69.
+
+
+LaTeX Warning: Reference `fig:FCN4s-results' on page 4 undefined on input line 
+69.
+
+[4] <FCN8s.pdf, id=24, 1568.86125pt x 235.88126pt>
+File: FCN8s.pdf Graphic file (type pdf)
+ <use FCN8s.pdf>
+Package pdftex.def Info: FCN8s.pdf used on input line 73.
+(pdftex.def)             Requested size: 341.43306pt x 51.33255pt.
+
+<FCN4s-results-Input(a).pdf, id=25, 256.96pt x 256.96pt>
+File: FCN4s-results-Input(a).pdf Graphic file (type pdf)
+
+<use FCN4s-results-Input(a).pdf>
+Package pdftex.def Info: FCN4s-results-Input(a).pdf used on input line 82.
+(pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
+
+<FCN4s-results-GT(b).pdf, id=26, 256.96pt x 256.96pt>
+File: FCN4s-results-GT(b).pdf Graphic file (type pdf)
+
+<use FCN4s-results-GT(b).pdf>
+Package pdftex.def Info: FCN4s-results-GT(b).pdf used on input line 85.
+(pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
+
+<FCN4s-results-Prediction(c).pdf, id=27, 256.96pt x 256.96pt>
+File: FCN4s-results-Prediction(c).pdf Graphic file (type pdf)
+
+<use FCN4s-results-Prediction(c).pdf>
+Package pdftex.def Info: FCN4s-results-Prediction(c).pdf used on input line 88.
+
+(pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
+
+<FCN4s-results-Input(d).pdf, id=28, 256.96pt x 256.96pt>
+File: FCN4s-results-Input(d).pdf Graphic file (type pdf)
+
+<use FCN4s-results-Input(d).pdf>
+Package pdftex.def Info: FCN4s-results-Input(d).pdf used on input line 91.
+(pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
+
+<FCN4s-results-GT(e).pdf, id=29, 256.96pt x 256.96pt>
+File: FCN4s-results-GT(e).pdf Graphic file (type pdf)
+
+<use FCN4s-results-GT(e).pdf>
+Package pdftex.def Info: FCN4s-results-GT(e).pdf used on input line 94.
+(pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
+
+<FCN4s-results-Prediction(f).pdf, id=30, 256.96pt x 256.96pt>
+File: FCN4s-results-Prediction(f).pdf Graphic file (type pdf)
+
+<use FCN4s-results-Prediction(f).pdf>
+Package pdftex.def Info: FCN4s-results-Prediction(f).pdf used on input line 97.
+
+(pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/FCN8s.
+pdf> <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/FCN4s
+-results-Input(a).pdf> <D:/左童春个人数据/Project-BuildingDetection/MyPa
+per/accv2016/FCN4s-results-GT(b).pdf> <D:/左童春个人数据/Project-Buildin
+gDetection/MyPaper/accv2016/FCN4s-results-Prediction(c).pdf> <D:/左童春个�
+�数据/Project-BuildingDetection/MyPaper/accv2016/FCN4s-results-Input(d).pdf> 
+<D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/FCN4s-resu
+lts-GT(e).pdf> <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv
+2016/FCN4s-results-Prediction(f).pdf>]
+<ourArchitecture.png, id=104, 555.0336pt x 457.71pt>
+File: ourArchitecture.png Graphic file (type png)
+ <use ourArchitecture.png>
+Package pdftex.def Info: ourArchitecture.png used on input line 107.
+(pdftex.def)             Requested size: 256.0748pt x 211.17075pt.
+
+
+LaTeX Warning: Reference `fig:ResultsofDifferentSupervision' on page 6 undefine
+d on input line 113.
+
+
+LaTeX Warning: Reference `fig:DoubleLoss' on page 6 undefined on input line 113
+.
+
+[6 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/ourArch
+itecture.png>]
+
+LaTeX Warning: Reference `fig:OutRepresentation' on page 7 undefined on input l
+ine 125.
+
+[7]
+(D:\左童春个人数据\Project-BuildingDetection\MyPaper\accv2016\accv2016su
+bmission.bbl [8]) [9]
+(D:\左童春个人数据\Project-BuildingDetection\MyPaper\accv2016\accv2016su
+bmission.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2814 strings out of 495354
+ 35702 string characters out of 3183858
+ 100428 words of memory out of 3000000
+ 5933 multiletter control sequences out of 15000+200000
+ 13279 words of font info for 52 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 33i,10n,29p,2204b,368s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/CTEX/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmbx7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/C
+TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmmi5.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/CTEX/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmr7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><
+C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/CTEX/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmss8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmss9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/CTEX/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb>
+Output written on accv2016submission.pdf (9 pages, 2671669 bytes).
+PDF statistics:
+ 180 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+

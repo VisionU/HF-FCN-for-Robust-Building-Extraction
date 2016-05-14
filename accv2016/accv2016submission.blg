@@ -1,0 +1,16 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: accv2016submission.aux
+The style file: splncs.bst
+Database file #1: egbib.bib
+Repeated entry---line 272 of file egbib.bib
+ : @article{noronha2001detection
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 673 of file egbib.bib
+ : @article{achanta2012slic
+ :                         ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in ngoautomatic
+Warning--there's no year in ngoautomatic
+You can't pop an empty literal stack for entry ngoautomatic
+while executing---line 1070 of file splncs.bst
+(There were 3 error messages)

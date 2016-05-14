@@ -1,0 +1,132 @@
+\begin{thebibliography}{10}
+
+\bibitem{noronha2001detection}
+Noronha, S., Nevatia, R.:
+\newblock Detection and modeling of buildings from multiple aerial images.
+\newblock Pattern Analysis and Machine Intelligence, IEEE Transactions on
+  \textbf{23} (2001)  501--518
+
+\bibitem{nosrati2009novel}
+Nosrati, M.S., Saeedi, P.:
+\newblock A novel approach for polygonal rooftop detection in satellite/aerial
+  imageries.
+\newblock In: Image Processing (ICIP), 2009 16th IEEE International Conference
+  on, IEEE (2009)  1709--1712
+
+\bibitem{izadi2012three}
+Izadi, M., Saeedi, P.:
+\newblock Three-dimensional polygonal building model estimation from single
+  satellite images.
+\newblock Geoscience and Remote Sensing, IEEE Transactions on \textbf{50}
+  (2012)  2254--2272
+
+\bibitem{cui2012complex}
+Cui, S., Yan, Q., Reinartz, P.:
+\newblock Complex building description and extraction based on hough
+  transformation and cycle detection.
+\newblock Remote Sensing Letters \textbf{3} (2012)  151--159
+
+\bibitem{cote2013automatic}
+Cote, M., Saeedi, P.:
+\newblock Automatic rooftop extraction in nadir aerial imagery of suburban
+  regions using corners and variational level set evolution.
+\newblock Geoscience and Remote Sensing, IEEE Transactions on \textbf{51}
+  (2013)  313--328
+
+\bibitem{wang2015efficient}
+Wang, J., Yang, X., Qin, X., Ye, X., Qin, Q.:
+\newblock An efficient approach for automatic rectangular building extraction
+  from very high resolution optical satellite imagery.
+\newblock Geoscience and Remote Sensing Letters, IEEE \textbf{12} (2015)
+  487--491
+
+\bibitem{akinlar2011edlines}
+Akinlar, C., Topal, C.:
+\newblock Edlines: A real-time line segment detector with a false detection
+  control.
+\newblock Pattern Recognition Letters \textbf{32} (2011)  1633--1642
+
+\bibitem{mayunga2007semi}
+Mayunga, S., Coleman, D., Zhang, Y.:
+\newblock A semi-automated approach for extracting buildings from quickbird
+  imagery applied to informal settlement mapping.
+\newblock International Journal of Remote Sensing \textbf{28} (2007)
+  2343--2357
+
+\bibitem{ghaffarian2014automaticPFICA}
+Ghaffarian, S., Ghaffarian, S.:
+\newblock Automatic building detection based on purposive fastica (pfica)
+  algorithm using monocular high resolution google earth images.
+\newblock ISPRS Journal of Photogrammetry and Remote Sensing \textbf{97} (2014)
+   152--159
+
+\bibitem{ghaffarian2014automaticsupervised}
+Ghaffarian, S., Ghaffarian, S.:
+\newblock Automatic building detection based on supervised classification using
+  high resolution google earth images.
+\newblock J. Photogr. Remote Sens., XL-3 (2014)  101--106
+
+\bibitem{chen2014shadow}
+Chen, D., Shang, S., Wu, C.:
+\newblock Shadow-based building detection and segmentation in high-resolution
+  remote sensing image.
+\newblock Journal of Multimedia \textbf{9} (2014)  181--188
+
+\bibitem{achanta2012slic}
+Achanta, R., Shaji, A., Smith, K., Lucchi, A., Fua, P., Susstrunk, S.:
+\newblock Slic superpixels compared to state-of-the-art superpixel methods.
+\newblock Pattern Analysis and Machine Intelligence, IEEE Transactions on
+  \textbf{34} (2012)  2274--2282
+
+\bibitem{dornaika2015object}
+Dornaika, F., Moujahid, A., Bosaghzadeh, A., El~Merabet, Y., Ruichek, Y.:
+\newblock Object classification using hybrid holistic descriptors: Application
+  to building detection in aerial orthophotos.
+\newblock Polibits (2015)  11--17
+
+\bibitem{baluyan2013novel}
+Baluyan, H., Joshi, B., Al~Hinai, A., Woon, W.L.:
+\newblock Novel approach for rooftop detection using support vector machine.
+\newblock ISRN Machine Vision \textbf{2013} (2013)
+
+\bibitem{ngoautomatic}
+Ngo, T.T., Collet, C., Mazet, V.:
+\newblock
+\newblock (Automatic rectangular building detection from vhr aerial imagery
+  using shadow and image segmentation)
+
+\bibitem{li2015robust}
+Li, E., Femiani, J., Xu, S., Zhang, X., Wonka, P.:
+\newblock Robust rooftop extraction from visible band images using higher order
+  crf.
+\newblock Geoscience and Remote Sensing, IEEE Transactions on \textbf{53}
+  (2015)  4483--4495
+
+\bibitem{Mnih2013Machine}
+Mnih, V.:
+\newblock Machine learning for aerial image labeling.
+\newblock Doctoral (2013)
+
+\bibitem{Saito2016Multiple}
+Saito, S., Yamashita, Y., Aoki, Y.:
+\newblock Multiple object extraction from aerial imagery with convolutional
+  neural networks.
+\newblock Journal of Imaging Science \& Technology \textbf{60} (2016)
+
+\bibitem{Long2014Fully}
+Long, J., Shelhamer, E., Darrell, T.:
+\newblock Fully convolutional networks for semantic segmentation.
+\newblock Computer Science \textbf{79} (2014)  1337--1342
+
+\bibitem{Xie2015Holistically}
+Xie, S., Tu, Z.:
+\newblock Holistically-nested edge detection.
+\newblock Computer Science (2015)  1395--1403
+
+\bibitem{Jia2014Caffe}
+Jia, Y., Shelhamer, E., Donahue, J., Karayev, S., Long, J., Girshick, R.,
+  Guadarrama, S., Darrell, T.:
+\newblock Caffe: Convolutional architecture for fast feature embedding.
+\newblock Eprint Arxiv (2014)  675--678
+
+\end{thebibliography}

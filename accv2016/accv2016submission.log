@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.26)  13 MAY 2016 20:50
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.26)  17 MAY 2016 21:10
 entering extended mode
 **accv2016submission.tex
 
@@ -354,111 +354,103 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-Overfull \hbox (21.54381pt too wide) in paragraph at lines 56--57
-[]\OT1/cmr/m/n/10 In this ar-ti-cle, we pro-pose a dual-supervision ful-ly con-
-vo-lu-tion-al net-work(DSFCN),
- []
+[3] <AerialImages.pdf, id=21, 830.10126pt x 225.84375pt>
+File: AerialImages.pdf Graphic file (type pdf)
 
-
-Underfull \vbox (badness 5105) has occurred while \output is active []
-
- [3]
-
-LaTeX Warning: Reference `Noh2015Learning' on page 4 undefined on input line 62
-.
-
-
-LaTeX Warning: Reference `fig:FCN4s-results' on page 4 undefined on input line 
-69.
-
-
-LaTeX Warning: Reference `fig:FCN4s-results' on page 4 undefined on input line 
-69.
-
-[4] <FCN8s.pdf, id=24, 1568.86125pt x 235.88126pt>
+<use AerialImages.pdf>
+Package pdftex.def Info: AerialImages.pdf used on input line 68.
+(pdftex.def)             Requested size: 341.43306pt x 92.89288pt.
+ [4 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/Aerial
+Images.pdf>]
+<FCN8s.pdf, id=45, 1568.86125pt x 235.88126pt>
 File: FCN8s.pdf Graphic file (type pdf)
  <use FCN8s.pdf>
-Package pdftex.def Info: FCN8s.pdf used on input line 73.
+Package pdftex.def Info: FCN8s.pdf used on input line 82.
 (pdftex.def)             Requested size: 341.43306pt x 51.33255pt.
 
-<FCN4s-results-Input(a).pdf, id=25, 256.96pt x 256.96pt>
+<FCN4s-results-Input(a).pdf, id=46, 256.96pt x 256.96pt>
 File: FCN4s-results-Input(a).pdf Graphic file (type pdf)
 
 <use FCN4s-results-Input(a).pdf>
-Package pdftex.def Info: FCN4s-results-Input(a).pdf used on input line 82.
+Package pdftex.def Info: FCN4s-results-Input(a).pdf used on input line 90.
 (pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
 
-<FCN4s-results-GT(b).pdf, id=26, 256.96pt x 256.96pt>
+<FCN4s-results-GT(b).pdf, id=47, 256.96pt x 256.96pt>
 File: FCN4s-results-GT(b).pdf Graphic file (type pdf)
 
 <use FCN4s-results-GT(b).pdf>
-Package pdftex.def Info: FCN4s-results-GT(b).pdf used on input line 85.
+Package pdftex.def Info: FCN4s-results-GT(b).pdf used on input line 93.
 (pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
 
-<FCN4s-results-Prediction(c).pdf, id=27, 256.96pt x 256.96pt>
+<FCN4s-results-Prediction(c).pdf, id=48, 256.96pt x 256.96pt>
 File: FCN4s-results-Prediction(c).pdf Graphic file (type pdf)
 
 <use FCN4s-results-Prediction(c).pdf>
-Package pdftex.def Info: FCN4s-results-Prediction(c).pdf used on input line 88.
+Package pdftex.def Info: FCN4s-results-Prediction(c).pdf used on input line 96.
 
 (pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
 
-<FCN4s-results-Input(d).pdf, id=28, 256.96pt x 256.96pt>
+<FCN4s-results-Input(d).pdf, id=49, 256.96pt x 256.96pt>
 File: FCN4s-results-Input(d).pdf Graphic file (type pdf)
 
 <use FCN4s-results-Input(d).pdf>
-Package pdftex.def Info: FCN4s-results-Input(d).pdf used on input line 91.
+Package pdftex.def Info: FCN4s-results-Input(d).pdf used on input line 99.
 (pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
 
-<FCN4s-results-GT(e).pdf, id=29, 256.96pt x 256.96pt>
+<FCN4s-results-GT(e).pdf, id=50, 256.96pt x 256.96pt>
 File: FCN4s-results-GT(e).pdf Graphic file (type pdf)
 
 <use FCN4s-results-GT(e).pdf>
-Package pdftex.def Info: FCN4s-results-GT(e).pdf used on input line 94.
+Package pdftex.def Info: FCN4s-results-GT(e).pdf used on input line 102.
 (pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
 
-<FCN4s-results-Prediction(f).pdf, id=30, 256.96pt x 256.96pt>
+<FCN4s-results-Prediction(f).pdf, id=51, 256.96pt x 256.96pt>
 File: FCN4s-results-Prediction(f).pdf Graphic file (type pdf)
 
 <use FCN4s-results-Prediction(f).pdf>
-Package pdftex.def Info: FCN4s-results-Prediction(f).pdf used on input line 97.
-
+Package pdftex.def Info: FCN4s-results-Prediction(f).pdf used on input line 105
+.
 (pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/FCN8s.
-pdf> <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/FCN4s
--results-Input(a).pdf> <D:/左童春个人数据/Project-BuildingDetection/MyPa
-per/accv2016/FCN4s-results-GT(b).pdf> <D:/左童春个人数据/Project-Buildin
-gDetection/MyPaper/accv2016/FCN4s-results-Prediction(c).pdf> <D:/左童春个�
-�数据/Project-BuildingDetection/MyPaper/accv2016/FCN4s-results-Input(d).pdf> 
-<D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/FCN4s-resu
-lts-GT(e).pdf> <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv
-2016/FCN4s-results-Prediction(f).pdf>]
-<ourArchitecture.png, id=104, 555.0336pt x 457.71pt>
-File: ourArchitecture.png Graphic file (type png)
- <use ourArchitecture.png>
-Package pdftex.def Info: ourArchitecture.png used on input line 107.
-(pdftex.def)             Requested size: 256.0748pt x 211.17075pt.
+LaTeX Warning: Citation `Simonyan2014Very' on page 5 undefined on input line 11
+1.
+
+[5 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/FCN8s.p
+df>] <ourArchitecture.pdf, id=65, 555.08177pt x 457.75015pt>
+File: ourArchitecture.pdf Graphic file (type pdf)
+
+<use ourArchitecture.pdf>
+Package pdftex.def Info: ourArchitecture.pdf used on input line 126.
+(pdftex.def)             Requested size: 256.0748pt x 211.1753pt.
 
 
 LaTeX Warning: Reference `fig:ResultsofDifferentSupervision' on page 6 undefine
-d on input line 113.
+d on input line 133.
+
+[6 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/FCN4s-r
+esults-Input(a).pdf> <D:/左童春个人数据/Project-BuildingDetection/MyPape
+r/accv2016/FCN4s-results-GT(b).pdf> <D:/左童春个人数据/Project-BuildingD
+etection/MyPaper/accv2016/FCN4s-results-Prediction(c).pdf> <D:/左童春个人�
+��据/Project-BuildingDetection/MyPaper/accv2016/FCN4s-results-Input(d).pdf> <D
+:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/FCN4s-result
+s-GT(e).pdf> <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv20
+16/FCN4s-results-Prediction(f).pdf>] [7 <D:/左童春个人数据/Project-Build
+ingDetection/MyPaper/accv2016/ourArchitecture.pdf>]
+<ComparedResults.pdf, id=151, 702.625pt x 1274.7625pt>
+File: ComparedResults.pdf Graphic file (type pdf)
+
+<use ComparedResults.pdf>
+Package pdftex.def Info: ComparedResults.pdf used on input line 178.
+(pdftex.def)             Requested size: 341.43306pt x 619.46506pt.
 
 
-LaTeX Warning: Reference `fig:DoubleLoss' on page 6 undefined on input line 113
-.
+LaTeX Warning: Float too large for page by 93.57678pt on input line 181.
 
-[6 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/ourArch
-itecture.png>]
 
-LaTeX Warning: Reference `fig:OutRepresentation' on page 7 undefined on input l
-ine 125.
-
-[7]
 (D:\左童春个人数据\Project-BuildingDetection\MyPaper\accv2016\accv2016su
-bmission.bbl [8]) [9]
+bmission.bbl [8] [9 <D:/左童春个人数据/Project-BuildingDetection/MyPaper
+/accv2016/ComparedResults.pdf>]) [10]
 (D:\左童春个人数据\Project-BuildingDetection\MyPaper\accv2016\accv2016su
 bmission.aux)
 
@@ -469,29 +461,28 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2814 strings out of 495354
- 35702 string characters out of 3183858
- 100428 words of memory out of 3000000
- 5933 multiletter control sequences out of 15000+200000
+ 2825 strings out of 495354
+ 35938 string characters out of 3183858
+ 101450 words of memory out of 3000000
+ 5942 multiletter control sequences out of 15000+200000
  13279 words of font info for 52 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 33i,10n,29p,2204b,368s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,11n,27p,2204b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/CTEX/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmbx7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/C
 TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmmi5.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/CTEX/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><
-C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/CTEX/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmss8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmss9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/CTEX/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb>
-Output written on accv2016submission.pdf (9 pages, 2671669 bytes).
+cmmi7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb>
+<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/CTEX/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmss9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/CTEX
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on accv2016submission.pdf (10 pages, 7518360 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
+ 221 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

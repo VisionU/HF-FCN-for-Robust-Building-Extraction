@@ -113,6 +113,22 @@ Saito, S., Yamashita, Y., Aoki, Y.:
   neural networks.
 \newblock Journal of Imaging Science \& Technology \textbf{60} (2016)
 
+\bibitem{chen14semantic}
+Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L.:
+\newblock Semantic image segmentation with deep convolutional nets and fully
+  connected crfs.
+\newblock In: ICLR. (2015)
+
+\bibitem{Zheng2015Conditional}
+Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V.:
+\newblock Conditional random fields as recurrent neural networks.
+\newblock (2015)  1529--1537
+
+\bibitem{Noh2015Learning}
+Noh, H., Hong, S., Han, B.:
+\newblock Learning deconvolution network for semantic segmentation.
+\newblock (2015)
+
 \bibitem{Long2014Fully}
 Long, J., Shelhamer, E., Darrell, T.:
 \newblock Fully convolutional networks for semantic segmentation.

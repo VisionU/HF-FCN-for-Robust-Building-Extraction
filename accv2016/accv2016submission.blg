@@ -13,4 +13,6 @@ Warning--empty journal in ngoautomatic
 Warning--there's no year in ngoautomatic
 You can't pop an empty literal stack for entry ngoautomatic
 while executing---line 1070 of file splncs.bst
+Warning--empty journal in Zheng2015Conditional
+Warning--empty journal in Noh2015Learning
 (There were 3 error messages)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.26)  17 MAY 2016 21:10
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.26)  20 MAY 2016 00:34
 entering extended mode
 **accv2016submission.tex
 
@@ -286,6 +286,56 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
+(C:\CTEX\MiKTeX\tex\latex\footmisc\footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks24
+\footnotemargin=\dimen140
+\c@pp@next@reset=\count139
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+(C:\CTEX\MiKTeX\tex\latex\tools\bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup7
+\symboldletters=\mathgroup8
+\symboldsymbols=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+(C:\CTEX\MiKTeX\tex\latex\booktabs\booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen141
+\lightrulewidth=\dimen142
+\cmidrulewidth=\dimen143
+\belowrulesep=\dimen144
+\belowbottomsep=\dimen145
+\aboverulesep=\dimen146
+\abovetopsep=\dimen147
+\cmidrulesep=\dimen148
+\cmidrulekern=\dimen149
+\defaultaddspace=\dimen150
+\@cmidla=\count140
+\@cmidlb=\count141
+\@aboverulesep=\dimen151
+\@belowrulesep=\dimen152
+\@thisruleclass=\count142
+\@lastruleclass=\count143
+\@thisrulewidth=\dimen153
+)
+(C:\CTEX\MiKTeX\tex\latex\tools\array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen154
+\extrarowheight=\dimen155
+\NC@list=\toks25
+\extratabsurround=\skip54
+\backup@length=\skip55
+)
 (D:\左童春个人数据\Project-BuildingDetection\MyPaper\accv2016\accv2016su
 bmission.aux
 
@@ -307,145 +357,129 @@ LaTeX Warning: Label `fig:FCN-4s' multiply defined.
 LaTeX Warning: Label `sub@fig:FCN-4s' multiply defined.
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
  (C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count139
-\scratchdimen=\dimen140
+\scratchcounter=\count144
+\scratchdimen=\dimen156
 \scratchbox=\box58
-\nofMPsegments=\count140
-\nofMParguments=\count141
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count142
-\MPscratchDim=\dimen141
-\MPnumerator=\count143
-\makeMPintoPDFobject=\count144
-\everyMPtoPDFconversion=\toks25
+\nofMPsegments=\count145
+\nofMParguments=\count146
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count147
+\MPscratchDim=\dimen157
+\MPnumerator=\count148
+\makeMPintoPDFobject=\count149
+\everyMPtoPDFconversion=\toks27
 ) ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 
 (C:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 
 (C:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 29.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 38.
 
 (C:\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
 
 
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-[3] <AerialImages.pdf, id=21, 830.10126pt x 225.84375pt>
+] [2]
+<AerialImages.pdf, id=17, 830.10126pt x 225.84375pt>
 File: AerialImages.pdf Graphic file (type pdf)
-
-<use AerialImages.pdf>
-Package pdftex.def Info: AerialImages.pdf used on input line 68.
+ <use AerialImages.pdf>
+Package pdftex.def Info: AerialImages.pdf used on input line 64.
 (pdftex.def)             Requested size: 341.43306pt x 92.89288pt.
- [4 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/Aerial
-Images.pdf>]
-<FCN8s.pdf, id=45, 1568.86125pt x 235.88126pt>
-File: FCN8s.pdf Graphic file (type pdf)
- <use FCN8s.pdf>
-Package pdftex.def Info: FCN8s.pdf used on input line 82.
-(pdftex.def)             Requested size: 341.43306pt x 51.33255pt.
 
-<FCN4s-results-Input(a).pdf, id=46, 256.96pt x 256.96pt>
+[3 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/AerialI
+mages.pdf>] [4] <FCN4s-results-Input(a).pdf, id=45, 256.96pt x 256.96pt>
 File: FCN4s-results-Input(a).pdf Graphic file (type pdf)
 
 <use FCN4s-results-Input(a).pdf>
-Package pdftex.def Info: FCN4s-results-Input(a).pdf used on input line 90.
+Package pdftex.def Info: FCN4s-results-Input(a).pdf used on input line 87.
 (pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
 
-<FCN4s-results-GT(b).pdf, id=47, 256.96pt x 256.96pt>
+<FCN4s-results-GT(b).pdf, id=46, 256.96pt x 256.96pt>
 File: FCN4s-results-GT(b).pdf Graphic file (type pdf)
 
 <use FCN4s-results-GT(b).pdf>
-Package pdftex.def Info: FCN4s-results-GT(b).pdf used on input line 93.
+Package pdftex.def Info: FCN4s-results-GT(b).pdf used on input line 90.
 (pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
 
-<FCN4s-results-Prediction(c).pdf, id=48, 256.96pt x 256.96pt>
+<FCN4s-results-Prediction(c).pdf, id=47, 256.96pt x 256.96pt>
 File: FCN4s-results-Prediction(c).pdf Graphic file (type pdf)
 
 <use FCN4s-results-Prediction(c).pdf>
-Package pdftex.def Info: FCN4s-results-Prediction(c).pdf used on input line 96.
+Package pdftex.def Info: FCN4s-results-Prediction(c).pdf used on input line 93.
 
 (pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
 
-<FCN4s-results-Input(d).pdf, id=49, 256.96pt x 256.96pt>
+<FCN4s-results-Input(d).pdf, id=48, 256.96pt x 256.96pt>
 File: FCN4s-results-Input(d).pdf Graphic file (type pdf)
 
 <use FCN4s-results-Input(d).pdf>
-Package pdftex.def Info: FCN4s-results-Input(d).pdf used on input line 99.
+Package pdftex.def Info: FCN4s-results-Input(d).pdf used on input line 96.
 (pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
 
-<FCN4s-results-GT(e).pdf, id=50, 256.96pt x 256.96pt>
+<FCN4s-results-GT(e).pdf, id=49, 256.96pt x 256.96pt>
 File: FCN4s-results-GT(e).pdf Graphic file (type pdf)
 
 <use FCN4s-results-GT(e).pdf>
-Package pdftex.def Info: FCN4s-results-GT(e).pdf used on input line 102.
+Package pdftex.def Info: FCN4s-results-GT(e).pdf used on input line 99.
 (pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
 
-<FCN4s-results-Prediction(f).pdf, id=51, 256.96pt x 256.96pt>
+<FCN4s-results-Prediction(f).pdf, id=50, 256.96pt x 256.96pt>
 File: FCN4s-results-Prediction(f).pdf Graphic file (type pdf)
 
 <use FCN4s-results-Prediction(f).pdf>
-Package pdftex.def Info: FCN4s-results-Prediction(f).pdf used on input line 105
+Package pdftex.def Info: FCN4s-results-Prediction(f).pdf used on input line 102
 .
 (pdftex.def)             Requested size: 99.58464pt x 99.58664pt.
+ [5 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/FCN4s-
+results-Input(a).pdf> <D:/左童春个人数据/Project-BuildingDetection/MyPap
+er/accv2016/FCN4s-results-GT(b).pdf> <D:/左童春个人数据/Project-Building
+Detection/MyPaper/accv2016/FCN4s-results-Prediction(c).pdf> <D:/左童春个人
+数据/Project-BuildingDetection/MyPaper/accv2016/FCN4s-results-Input(d).pdf> <
+D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/FCN4s-resul
+ts-GT(e).pdf> <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2
+016/FCN4s-results-Prediction(f).pdf>]
+<ThreeFuseModes.pdf, id=115, 509.14214pt x 424.94759pt>
+File: ThreeFuseModes.pdf Graphic file (type pdf)
 
-
-LaTeX Warning: Citation `Simonyan2014Very' on page 5 undefined on input line 11
-1.
-
-[5 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/FCN8s.p
-df>] <ourArchitecture.pdf, id=65, 555.08177pt x 457.75015pt>
-File: ourArchitecture.pdf Graphic file (type pdf)
-
-<use ourArchitecture.pdf>
-Package pdftex.def Info: ourArchitecture.pdf used on input line 126.
-(pdftex.def)             Requested size: 256.0748pt x 211.1753pt.
+<use ThreeFuseModes.pdf>
+Package pdftex.def Info: ThreeFuseModes.pdf used on input line 144.
+(pdftex.def)             Requested size: 284.52756pt x 237.4827pt.
 
 
 LaTeX Warning: Reference `fig:ResultsofDifferentSupervision' on page 6 undefine
-d on input line 133.
+d on input line 150.
 
-[6 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/FCN4s-r
-esults-Input(a).pdf> <D:/左童春个人数据/Project-BuildingDetection/MyPape
-r/accv2016/FCN4s-results-GT(b).pdf> <D:/左童春个人数据/Project-BuildingD
-etection/MyPaper/accv2016/FCN4s-results-Prediction(c).pdf> <D:/左童春个人�
-��据/Project-BuildingDetection/MyPaper/accv2016/FCN4s-results-Input(d).pdf> <D
-:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/FCN4s-result
-s-GT(e).pdf> <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv20
-16/FCN4s-results-Prediction(f).pdf>] [7 <D:/左童春个人数据/Project-Build
-ingDetection/MyPaper/accv2016/ourArchitecture.pdf>]
-<ComparedResults.pdf, id=151, 702.625pt x 1274.7625pt>
+[6] [7 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/Thr
+eeFuseModes.pdf>] <ComparedResults.pdf, id=142, 702.625pt x 1274.7625pt>
 File: ComparedResults.pdf Graphic file (type pdf)
 
 <use ComparedResults.pdf>
-Package pdftex.def Info: ComparedResults.pdf used on input line 178.
-(pdftex.def)             Requested size: 341.43306pt x 619.46506pt.
+Package pdftex.def Info: ComparedResults.pdf used on input line 191.
+(pdftex.def)             Requested size: 312.9803pt x 567.84135pt.
 
 
-LaTeX Warning: Float too large for page by 93.57678pt on input line 181.
+LaTeX Warning: Float too large for page by 41.95308pt on input line 194.
 
 
 (D:\左童春个人数据\Project-BuildingDetection\MyPaper\accv2016\accv2016su
@@ -461,28 +495,30 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2825 strings out of 495354
- 35938 string characters out of 3183858
- 101450 words of memory out of 3000000
- 5942 multiletter control sequences out of 15000+200000
- 13279 words of font info for 52 fonts, out of 3000000 for 9000
+ 3115 strings out of 495354
+ 39567 string characters out of 3183858
+ 108873 words of memory out of 3000000
+ 6208 multiletter control sequences out of 15000+200000
+ 17392 words of font info for 65 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,11n,27p,2204b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,15n,24p,2429b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/CTEX/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmbx7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/C
-TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmmi7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb>
-<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/CTEX/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmss9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/CTEX
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on accv2016submission.pdf (10 pages, 7518360 bytes).
+TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/CTEX/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/CTEX/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/CTEX/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.p
+fb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/CTEX/MiKTeX/font
+s/type1/public/amsfonts/cm/cmss10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmss8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/CT
+EX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+ti10.pfb>
+Output written on accv2016submission.pdf (10 pages, 7079900 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
+ 218 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

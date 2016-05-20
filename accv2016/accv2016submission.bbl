@@ -20,11 +20,12 @@ Izadi, M., Saeedi, P.:
 \newblock Geoscience and Remote Sensing, IEEE Transactions on \textbf{50}
   (2012)  2254--2272
 
-\bibitem{cui2012complex}
-Cui, S., Yan, Q., Reinartz, P.:
-\newblock Complex building description and extraction based on hough
-  transformation and cycle detection.
-\newblock Remote Sensing Letters \textbf{3} (2012)  151--159
+\bibitem{wang2015efficient}
+Wang, J., Yang, X., Qin, X., Ye, X., Qin, Q.:
+\newblock An efficient approach for automatic rectangular building extraction
+  from very high resolution optical satellite imagery.
+\newblock Geoscience and Remote Sensing Letters, IEEE \textbf{12} (2015)
+  487--491
 
 \bibitem{cote2013automatic}
 Cote, M., Saeedi, P.:
@@ -33,26 +34,6 @@ Cote, M., Saeedi, P.:
 \newblock Geoscience and Remote Sensing, IEEE Transactions on \textbf{51}
   (2013)  313--328
 
-\bibitem{wang2015efficient}
-Wang, J., Yang, X., Qin, X., Ye, X., Qin, Q.:
-\newblock An efficient approach for automatic rectangular building extraction
-  from very high resolution optical satellite imagery.
-\newblock Geoscience and Remote Sensing Letters, IEEE \textbf{12} (2015)
-  487--491
-
-\bibitem{akinlar2011edlines}
-Akinlar, C., Topal, C.:
-\newblock Edlines: A real-time line segment detector with a false detection
-  control.
-\newblock Pattern Recognition Letters \textbf{32} (2011)  1633--1642
-
-\bibitem{mayunga2007semi}
-Mayunga, S., Coleman, D., Zhang, Y.:
-\newblock A semi-automated approach for extracting buildings from quickbird
-  imagery applied to informal settlement mapping.
-\newblock International Journal of Remote Sensing \textbf{28} (2007)
-  2343--2357
-
 \bibitem{ghaffarian2014automaticPFICA}
 Ghaffarian, S., Ghaffarian, S.:
 \newblock Automatic building detection based on purposive fastica (pfica)
@@ -60,23 +41,11 @@ Ghaffarian, S., Ghaffarian, S.:
 \newblock ISPRS Journal of Photogrammetry and Remote Sensing \textbf{97} (2014)
    152--159
 
-\bibitem{ghaffarian2014automaticsupervised}
-Ghaffarian, S., Ghaffarian, S.:
-\newblock Automatic building detection based on supervised classification using
-  high resolution google earth images.
-\newblock J. Photogr. Remote Sens., XL-3 (2014)  101--106
-
 \bibitem{chen2014shadow}
 Chen, D., Shang, S., Wu, C.:
 \newblock Shadow-based building detection and segmentation in high-resolution
   remote sensing image.
 \newblock Journal of Multimedia \textbf{9} (2014)  181--188
-
-\bibitem{achanta2012slic}
-Achanta, R., Shaji, A., Smith, K., Lucchi, A., Fua, P., Susstrunk, S.:
-\newblock Slic superpixels compared to state-of-the-art superpixel methods.
-\newblock Pattern Analysis and Machine Intelligence, IEEE Transactions on
-  \textbf{34} (2012)  2274--2282
 
 \bibitem{dornaika2015object}
 Dornaika, F., Moujahid, A., Bosaghzadeh, A., El~Merabet, Y., Ruichek, Y.:
@@ -133,6 +102,11 @@ Noh, H., Hong, S., Han, B.:
 Long, J., Shelhamer, E., Darrell, T.:
 \newblock Fully convolutional networks for semantic segmentation.
 \newblock Computer Science \textbf{79} (2014)  1337--1342
+
+\bibitem{Simonyan2014Very}
+Simonyan, K., Zisserman, A.:
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock Eprint Arxiv (2014)
 
 \bibitem{Xie2015Holistically}
 Xie, S., Tu, Z.:

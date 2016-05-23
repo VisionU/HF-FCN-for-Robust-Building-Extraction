@@ -28,7 +28,8 @@
 \def\ACCV16SubNumber{***}  % Insert your submission number here
 
 %===========================================================
-\title{Robust Building Extraction from Large-scale Aerial Scene with Multi-scale Fully Convolutional Network} % Replace with your title
+\title{HF-FCN: Hierarchical Fusion Fully Convolutional Network for Robust Building Extraction} % Replace with your title
+\subtitle{Robust Building Extraction from Large-scale Aerial Scene with  Hierarchical Fusion Fully Convolutional Network}
 \titlerunning{ACCV-16 submission ID \ACCV16SubNumber}
 \authorrunning{ACCV-16 submission ID \ACCV16SubNumber}
 
@@ -38,33 +39,32 @@
 \maketitle
 %===========================================================
 \begin{abstract}
-   \textbf{Automatic building extraction from remote sensing image plays a critical role in  a diverse range of applications. However, it is  a huge challenge to extract any-size buildings with large variational appearances and occlusions. To tackle these problems, we propose a robust system employing a improved multi-scale fully convolutional networks(MSFCNs), which effectively integrates the information generated from a group of neurons with multi-scale receptive fields. \textbf{XXXXXXXXXXXXXX}
-   Our architecture can take a whole aerial images as inputs without warping or cropping and output building map directly.  The experiment results test on a publicly available aerial imagery dataset proved that our proposed  methodology significantly shorten time-consuming and surpass the performance of state-of-the-art.}
+   \textbf{Currently, automatic building extraction from remote sensing image plays a critical role in  a diverse range of applications. However, it is significantly  challenging to extract arbitrary-size buildings with large variational appearances or occlusions. To tackle these problems, we propose a robust system employing a novel hierarchical fusion fully convolutional network (HF-FCN), which effectively integrates the information generated from a group of neurons with multi-scale receptive fields. Our architecture can take a whole aerial images as inputs without warping or cropping and output building map directly. The experiment results tested on a publicly available aerial imagery dataset proved that our proposed methodology significantly shorts time-consuming and surpass the performance of state-of-the-art.}
 
 \end{abstract}
 
 %===========================================================
 \section{Introduction}
-   With the rapid development of remote sensing technologies and popularization of geospatial related commercial software, very high resolution satellite images are very easily accessible, these valuable data provides a huge fuel for interpreting real terrestrial scenes. Building rooftops is one of the most important type of terrestrial objects because it is essential for a wide range of technologies, such as, urban planning, automated map making, 3D city modelling, disaster assessment, military 	reconnaissance, etc. However, it is very costly and time-consuming to manually delineate the footprint of buildings even for human experts. 
+   With the rapid development of remote sensing technologies and popularization of geospatial related commercial softwares, very high resolution satellite images are easily accessible. These valuable data provides a huge fuel for interpreting real terrestrial scenes. Building rooftops is one of the most important type of terrestrial objects because it is essential for a wide range of technologies, such as, urban planning, automated map making, 3D city modelling, disaster assessment, military 	reconnaissance, etc. However, it is very costly and time-consuming to manually delineate the footprint of buildings even for human experts. 
    
-   In recent decades, many researchers have made massive attempts to extract buildings automatically. Much of the past of work defines criteria according to the unique  characteristics of rooftop, such as regular shapes\cite{noronha2001detection}\cite{nosrati2009novel}\cite{izadi2012three}\cite{wang2015efficient}, homogeneous color \cite{cote2013automatic}, surrounding shadows \cite{ok2013automated} 
+   In recent decades, many researchers have made massive attempts to extract buildings automatically. Much of the past work defines criteria according to the particular   characteristics of rooftop, \textbf{such as, polygonal boundary\cite{noronha2001detection}\cite{nosrati2009novel}\cite{izadi2012three}\cite{wang2015efficient}, homogeneous color or texture \cite{cote2013automatic}, surrounding shadows \cite{B2008Building}\cite{ok2013automated}\cite{chen2014shadow}\cite{ngoautomatic}, and their combinations \cite{baluyan2013novel}\cite{li2015robust}}. However, such approaches are weakly capable of handling real-world data because hand-coded rules or probability models learned from small samples have strong dependency with data. For example, they assume that profile of buildings is polygon while the shape of stadiums always is circle or oval. For the sake of deploying a practical building extraction system, Mnih \textit{et al.} \cite{Mnih2013Machine} created a huge publicly dataset including large-scale aerial images and corresponding human-labeled maps, and proposed a patch-based convolutional neural network to extract object locations of objects automatically. Based on Mnih's work, \cite{Saito2016Multiple} improved the performance further. Though these methods achieve high performance, they still have limited ability to deal with two often appearing cases: (1) Buildings are severely occluded by shadows or trees. (2) Buildings possess moderately variational appearances. 
+      
+   Here, we present a robust building extraction system by developing a hierarchical fusion fully convolutional network(HF-FCN) trained on a publicly available large aerial imagery dataset\cite{Mnih2013Machine}. HF-FCN provides a strong ability to extracting building rooftops even with significantly variational appearances and severely occlusions without any post-processing. Meanwhile, it further improves the overall accuracy than \cite{Mnih2013Machine}\cite{Saito2016Multiple}. Compared with patch based methods \cite{Mnih2013Machine}\cite{Saito2016Multiple}, HF-FCN takes whole images as inputs without cropping or warping them to a fixed size and directly outputs segmentation maps by one pass of forward propagation. Therefore, time consuming is tremendously decreased for predicting building map from a large aerial image.  
+  
+   The rest of this article is organized as follows. In section 1.1, we summarize main   methods for building extraction. Section 2.1 outlines some key ideas of fully convolutional network(FCN), section 2.2 provides details of our neural network architecture. In section 2.3, the formulation of our system is proposed. Section 3.1 presents the dataset used for training and testing in our experiments. Section 3.2  introduces training settings and strategies of our proposed network.  In section 3.3, we compare our results with two patch based methods using the same publicly dataset. In section 4, we discuss the experimental results and summarize whole article. 
    
-    \textbf{  In this article, we aim at deploying a robust building extraction system that can handle buildings with different sizes, variational appearances and occlusions.  }
- 
-   The rest of this article is organized as follows. The section 2.1 outlines some key ideas of fully convolutional network(FCN), the section 2.2 provides details of our neural network architecture. In section 2.3 the formulation of our system is proposed. The section 4.1 presents the datasets which is used for training and testing in our experiments. The section 3.2  introduces training settings and strategies of our proposed network.  The section 3.3, we compare our results with two patch based methods using same dataset with us. In section 4, we discuss the experimental results and summarize whole article. 
    
-   
-\subsection{Related Works}
-	 According to our experience of life, we learn that the most of building rooftops have more regular shapes, which usually are rectangular or combinations of several rectangles. Hereby, \cite{noronha2001detection}\cite{nosrati2009novel}\cite{izadi2012three}\cite{wang2015efficient} exploited a graph-based search to establish a set of rooftop hypotheses through examining the relationships of lines and line intersections, and then removed the fake hypotheses using a series of criteria. \cite{cote2013automatic} generated rooftop outline from selected corners in  multiple color and color-invariance spaces, further refined to fit the best possible boundaries through level-set curve evolution. Though these geometric primitives based methods methods achieve good performance in high contract remote sensing imagery , they suffer from three serious shortcomings. Firstly, they lack the ability of detecting arbitrarily shaped building rooftop. Secondly, they fail to  extract credible geometric features in buildings with inhomogeneous color distribution or low contrast with surroundings. Thirdly, it is hardly possible to process large-scale scenes because of their high computational-complexity.	
+\section{Related Works}
+   In previous literatures, one popular way of extracting buildings is employing their shape information. It is observed that rooftops have more regular shapes, which usually are rectangular or combinations of several rectangles.\cite{noronha2001detection}\cite{nosrati2009novel}\cite{izadi2012three}\cite{wang2015efficient} exploited a graph-based search to establish a set of rooftop hypotheses through examining the relationships of lines and line intersections, and then removed the fake hypotheses using a series of criteria. \cite{cote2013automatic} generated rooftop outline from selected corners in  multiple color and color-invariance spaces, further refined to fit the best possible boundaries through level-set curve evolution. Though these geometric primitives based methods achieve good performance in high contract remote sensing imagery, they suffer from three  shortcomings. Firstly, they lack the ability of detecting arbitrarily shaped building rooftop. Secondly, they fail to  extract credible geometric features in buildings with inhomogeneous color distribution or low contrast with surroundings. Thirdly, it is time-consuming to process large-scale scenes because of their high computational complexity.	
 	
-   Apart from using shape information, spectral features is a distinctive feature for  terrestrial object detection. For instance, shadows are commonly dark grey or black, vegetations are usually green or yellow with particular textures, and main roads are dim gray with different road marks in most case. According to these prior knowledge, Ghaffarian \textit{et al.} \cite{ghaffarian2014automaticPFICA} split aerial scene into three components(respectively, shadows and the vegetation, roads and the bare soil, building) using a group of manually set rules. Afterwards, a purposive fast independent component analysis (PFastICA) technique is employed to separate building area from remote sensing image. However, the results is significantly sensitive to parameter choice. A feasible alternative strategy is to learn the appearance representation using  supervised learning algorithm. \cite{chen2014shadow}\cite{dornaika2015object}\cite{baluyan2013novel}\cite{ngoautomatic} designed a similar framework. Firstly, aerial image is divided into superpixels using  a certain over-segmentation algorithm. Secondly, hand-craft features, such as, color histograms or local binary patterns, are extracted from each over-segmented regions. Finally, each region was classified using machine learning tools and a gallery of training descriptors. \textbf{ Because it's inevitable for machine learning method to mislabel regions with close appearance, additional information is utilized to refine previous result.} \cite{ngoautomatic} removed false rooftops using a assumption that buildings are surrounded by shadows because of illumination. \cite{baluyan2013novel} devised a ``histogram method" to detect missed rooftops. \cite{li2015robust} select probable rooftops after pruning out blobs using shadows, light direction, a series of shape criteria, and then these rooftops is refined by high order conditional random field. The drawbacks are threefold. (1) It is problematic to recognize a over-segmented region as building because terrestrial objects have huge variational appearance in real aerial scene. (2) Hand-craft features are not robust to large-scale remote sensing image. (3) Additional information is unreliable. For instance, some buildings have no shadow in its neighbourhood, and some buildings have unique structures which are not satisfied to hand-coded criteria. 
+   Apart from using shape information, spectral information is a distinctive feature for  terrestrial object detection. For instance, shadows are commonly dark grey or black, vegetations are usually green or yellow with particular textures, and main roads are dim gray in most cases. According to these prior knowledge, Ghaffarian \textit{et al.} \cite{ghaffarian2014automaticPFICA} split aerial scenes into three components (respectively, shadows and the vegetation, roads and the bare soil, buildings) using a group of manually established rules. Afterwards, a purposive fast independent component analysis (PFastICA) technique is employed to separate building area from remote sensing image. However, their results are significantly sensitive to parameter choice. A feasible alternative strategy is to learn the appearance representation using  supervised learning algorithm. \cite{chen2014shadow}\cite{dornaika2015object}\cite{baluyan2013novel}\cite{ngoautomatic} designed a similar framework. Firstly, an aerial image is divided into superpixels using  a certain over-segmentation algorithm. Secondly, hand-crafted features, such as, color histograms or local binary patterns (LBP), are extracted from each over-segmented regions. Finally, each region is classified using machine learning tools and a gallery of training descriptors. \textbf{ Because it's inevitable for machine learning method to mislabel regions with close appearance, additional information is utilized to refine previous results.} \cite{ngoautomatic} removed false rooftops using a assumption that buildings are surrounded by shadows because of illumination. \cite{baluyan2013novel} devised a ``histogram method" to detect missed rooftops. \cite{li2015robust} selected probable rooftops after pruning out blobs using shadows, light direction, a series of shape criteria, and then these rooftops is refined by high order conditional random field. The drawbacks of these algorithms are threefold. (1) It is problematic to recognize a over-segmented region as buildings because terrestrial objects have huge variational appearances in real aerial scene. (2) Hand-craft features are sensitive to input data, therefore, it is not robust to process large-scale remote sensing images. (3) Additional information is unreliable. For instance, some low buildings have no shadow in its neighbourhood, and some buildings have unique structures which are not satisfied to hand-coded criteria. 
 
-    As mentioned above, traditional methods are not capable of adapting to real scenes with huge variational appearance, occlusion and low contrast. Recently, deep neural networks have been widely deployed in general image segmentation or scene labelling tasks. Mnih, a pioneer, have presented a patch-based framework in \cite{Mnih2013Machine} for learning to label aerial images. A  neural network architecture is carefully designed for predicting buildings in aerial imagery, and then the output of this network is processed by conditional random fields(CRFs). Satito \cite{Saito2016Multiple} improved Mnih's networks for extracting multiple kinds of objects simultaneously, two techniques consisting of model averaging with spatial displacement(MA) and channel-wise inhibited softmax (CIS) are introduced to enhance the  performance. However, both two methods need to crop test image into a fixed size, which not only increase the time loss, but also break the integrity of building. For example, they obtain bad performance for large-size or occluded buildings (see Fig. \ref{fig:BadResults}) and cost about 9s for 1500 $\times$ 1500 image without model averaging. 
+    As mentioned above, traditional methods are not capable of adapting to real scenes with huge variational appearance, occlusion or low contrast. Recently, deep neural networks have been widely deployed in general image segmentation or scene labelling tasks. Mnih, a pioneer, have presented a patch-based framework for learning to label aerial images\cite{Mnih2013Machine}. A  neural network architecture is carefully designed for predicting buildings in aerial imagery, and the output of this network is processed by conditional random fields (CRFs). Satito \cite{Saito2016Multiple} improved Mnih's networks for extracting multiple kinds of objects simultaneously, two techniques consisting of model averaging with spatial displacement (MA) and channel-wise inhibited softmax (CIS) are introduced to enhance the  performance. However, these methods need to crop test image into a fixed size, which not only increases the time consuming, but also breaks the integrity of buildings. 
+%    For example, they obtain bad performance for large-size or occluded buildings (see Fig. \ref{fig:BadResults}) and cost about 9s for 1500 $\times$ 1500 image without model averaging. 
    
-   Mapping buildings from aerial image is essentially a problem of semantic segmentation. Recent work suggests a number of methods in processing natural images.  Chen et al. \cite{chen14semantic} present a system which combine the responses at the final convulotional layer with a fully connected conditional random field (CRF). The system is able to localize segment boundaries at a quite high level of accuracy. An end-to-end network \cite{Zheng2015Conditional}  which integrates CRF modelling with CNNs avoids off-line post-processing methods for object delineation. Noh et al. \cite{Noh2015Learning} apply a deconvolution network to each proposal in an input image, and construct the final semantic segmentation map by combining the results from all proposals in a simple manner.
+   Mapping buildings from aerial image is essentially a problem of semantic segmentation. Recent work suggests a number of methods in processing natural images. In \cite{Long2014Fully}, the coarse predictions from a late stage are upsampled and integrated with predictions from previous stage to yield finer ones, the whole procedure is repeated in this fashion until reaching a desired output. Chen et al. \cite{chen14semantic} present a system which combines the responses at the final convolutional layer with a fully connected conditional random field (CRF). The system is able to localize segment boundaries at a quite high level of accuracy. An end-to-end network \cite{Zheng2015Conditional}  which integrates CRF modelling with CNNs avoids off-line post-processing methods for object delineation. Noh et al. \cite{Noh2015Learning} apply a deconvolution network to each proposal in an input image, and construct the final semantic segmentation map by combining the results from all proposals in a simple manner.
      
-   Although these methods show promise in segmenting natural images, they have components not suited for building extraction. First, buildings are frequently occluded by shadows or trees (see Fig.\ref{fig:AerialImages} (a)). It is challengable to delineate building boundaries even for human experts. \textbf{Though \cite{chen14semantic} \cite{Zheng2015Conditional} achieve excellent performance in processing boundary of natural image, neither of them reported that they have strong ability to handle occlusions.}
-Second, buildings have significantly variational appearance even in a single one. (see Fig.\ref{fig:AerialImages} (b)). Moreover, a number of buildings are very close to the plot on the ground or road (see Fig.\ref{fig:AerialImages} (c)). Based on our observation, there are few samples emerged in PASACAL VOC 2012 dataset. Last but not the least, the size of objects in a remote sensing image is in a wide range. For example, some images include a large number of tiny buildings (see Fig.\ref{fig:AerialImages} (d)) and some ones are composed of moderate quantity of small-scale rooftops and a few of large-scale rooftops. \cite{Noh2015Learning} claimed that it handles objects in multiple scales, but it only suitable to multi-class object segmentation. 
+   Although these methods show promise in segmenting natural images, they have components not suited for building extraction. First, buildings are frequently occluded by shadows or trees (see Fig.\ref{fig:AerialImages} (a)). It is challengable to delineate building boundaries even for human experts. \textbf{Though \cite{chen14semantic}\cite{Zheng2015Conditional} achieve excellent performance in processing boundary of natural image, neither of them reported that they have strong ability to handle occlusions.} Second, buildings have significantly variational appearance even in a single one. (see Fig.\ref{fig:AerialImages} (b)). Moreover, a number of buildings are very close to the plot on the ground or road (see Fig.\ref{fig:AerialImages} (c)). Based on our observation, there are few samples emerged in PASACAL VOC 2012 dataset. Last but not the least, the size of objects in a remote sensing image is in a wide range. For example, some images include a large number of tiny buildings (see Fig.\ref{fig:AerialImages} (d)) and some ones are composed of moderate quantity of small-scale rooftops and a few of large-scale rooftops. On account of low resolution (eight resolution of input image) of output from \cite{Long2014Fully}, precise structures are sacrificed severely. It is reported that \cite{Long2014Fully} have limited ability to locate small objects. \cite{Noh2015Learning} claimed  it handles objects in multiple scales, but it only suitable to multi-class object segmentation. 
 
 \begin{figure}
 \centering
@@ -74,133 +74,180 @@ Second, buildings have significantly variational appearance even in a single one
 \end{figure}
 
 %===========================================================
-\section{Proposed Method} 
-    In this section, we firstly introduce a well-known semantic segmentation network, called fully convolutional network(FCN)\cite{Long2014Fully}. We attempt to extract footprints of building  using  architecture proposed by author and two modified versions. Our experiments show that these networks are not enough to accomplish building  extraction task. \textbf{Inspired by \cite{Xie2015Holistically}, we introduce a multi-scale fully convolutional network(MSFCN) for extracting rooftops, it turns out to be achieve state-of-the-art performance in a public aerial image dataset.} Finally, we formulate our problem and loss function.
+\section{System Overview} 
+   In this section, we introduce a hierarchical fusion fully convolutional network (HF-FCN) for extracting rooftops, and then formulate our problem and loss function.
          
-\subsection{Fully Convolutional Network}
-    As mentioned in introduction, patch-based building extraction methods \cite{Mnih2013Machine} \cite{Saito2016Multiple} suffer from shortcoming in processing big buildings because of the fixed-size inputs. As far as we know, fully convolutional network(FCN) takes whole image as inputs and directly outputs building rooftops by one pass of forward propagation. Because it can process input images of any sizes without warping or cropping, integrality of object is protected much better. 
-	
-	Long \textit{et al.} put forward the concept of fully convolutional network(FCN) in \cite{Long2014Fully} for the first time. \textbf{It said: ``While a general deep net computes a general nonlinear function, a net with only layers of this form computes a nonlinear filter, which we call a deep filter or fully convolutional network.''} In practice, the fully connected layers in traditional CNNs are transformed to convolutional layers with 1 $\times$ 1 kernels. Due to the mechanism of pooling, the output of the network is a coarse heat map. For pixelwise prediction, skip-net technique is used to connect various coarse outputs back to pixels. For example, the framework of FCN-8s is described as following. We firstly obtain the 16 stride predictions by fusing the predictions of pooling4 with the 2 $\times$ upsampling of predictions from \textit{conv7}(convolutionalized \textit{fc7}). Then we continue in this fashion by fusing predictions from \textit{pool3} with a 2 $\times$ upsampling of the 16 stride predictions, denoted as 8 stride predictions. Finally, the 8 stride predictions are upsampled back to image with original size. 
-	 
-	In our experiments, we first directly apply the FCN-8s to extract building rooftop by replacing the loss function with sigmoid cross-entropy loss. In order to achieving better performance, the network is extended to FCN-4s, FCN-2s. Our experiments show that FCN-4s and FCN-2s get the best performance with overall recall of 70.19 $\%$ in precision recall breakeven point. According to our results, the first row of Fig. \ref{fig:FCN4s-results} indicates that FCN-4s has less ability to handle  objects with small size. The second row of Fig. \ref{fig:FCN4s-results} shows that it is hard for FCN to discriminate buildings with ground if their color is similar. To overcome these drawbacks, a improved FCN is introduced in next section. 
-	
+\subsection{Network Architecture} 
+   We design our network based on VGG16 Net\cite{Simonyan2014Very} and make some modifications. The reasons for choose VGG16 Net are two-fold: (1) It has great depth (16 convolutional layers), and multiple stages (five 2-stride down-sampling layers). We can acquire enough multi-level information from different stages and convolutional layers. (2) Network parameters pre-trained on very large image dataset(ImageNet) are helpful for initializing our network  because our aerial data is essentially optical imagery.  The modifications are listed as following: (1) Two fully connected layer \textit{fc6, fc7} and fifth pooling layer are cut, because they are at $\frac{1}{32}$ of input resolution. Meanwhile, the number of neurons in \textit{fc6, fc7} is too large to cost intensive computation. (2) \textbf{Feature maps from each convolutional layer in trimmed VGG16 Net (denote as level 1) are fed into a convolutional layer with a filter of 1$\times$1 kernel and 1 neuron.} The outputs of these convolutional layers are upsampled and cropped to the same size of input image (denote as level 2). Upsampling is implemented via deconvolution which is initialized by bilinear interpolation.   Finally, All the  feature maps in level 2 are stacked and put into a convolutional layer with a filter of 1$\times$1 kernel and 1 neuron to yield final predicted map (also denote as level 3). Our architecture is shown in Fig. \ref{fig:hierarchicalFCN}.
+ 
 \begin{figure}
 \centering
-\subfigure[]{	
-	\label{fig:InputImage}
-	\includegraphics[width=35mm]{FCN4s-results-Input(a)}}
-\subfigure[]{
-	\label{fig:GroundTruth}
-	\includegraphics[width=35mm]{FCN4s-results-GT(b)}}
-\subfigure[]{
-	\label{fig:FCN-4s}
-	\includegraphics[width=35mm]{FCN4s-results-Prediction(c)}}
-\subfigure[]{	
-	\label{fig:InputImage}
-	\includegraphics[width=35mm]{FCN4s-results-Input(d)}}
-\subfigure[]{
-	\label{fig:GroundTruth}
-	\includegraphics[width=35mm]{FCN4s-results-GT(e)}}
-\subfigure[]{
-	\label{fig:FCN-4s}
-	\includegraphics[width=35mm]{FCN4s-results-Prediction(f)}}
-\caption{(a)(d) Input image. (b)(e) Ground truth. (c)(f) FCN-4s prediction.}
-\label{fig:FCN4s-results}
+\includegraphics[width=120mm]{hierarchicalFCN4}
+\caption{Our network architecture.}
+\label{fig:hierarchicalFCN}
 \end{figure}
- 
-\subsection{Our Architecture} 
-   There are three reasons that FCN-8s is not appropriate methods for building extraction. (1) \textbf{The output of 32 stride layers, including convolutionalized \textit{fc6, fc7} and fifth pooling layer, is too fuzzy to utilize. Meanwhile, the neurons numbers of convolutionalized \textit{fc6, fc7} are too large to cost intensive computation.} (2) The output from FCN-8s is at one-eight of the input resolution. It is not dense enough for very high resolution remote sensing image. Though FCN4s and FCN2s can increase the resolution, they have little help for improving performance. Defective fusion strategy is the most likely reason. On the one hand, in \cite{Long2014Fully}, the coarse predictions from a late stage are upsampled and combined with prediction from its preceding stage using simple sum operation. (3) \textbf{In ConvNet, the latter the layer is, the less the spatial information is and the richer the semantic information is. For instance, in FCN-8s, the firth stage generate low level semantic information, such as, regions with similar color or texture, and fine spatial resolution. On the contrary, the last stage outputs strong semantic features but coarse map.} FCN-8s takes no account of combining semantic information and spatial information effectively.  
-  
-%   \begin{table}
-%	\label{tab:receptivefield} 
-%	\centering
-%	\caption{The receptive field and stride size in VGG16 net. Bolded layer is used in our architecture.}	
-% 	\begin{tabular}{C{1cm}|*{16}{C{0.74cm}}} 
-%	\hline
-%	layer & $\bm{c1\_1}$ & $\bm{c1\_2}$  & $\bm{c2\_1}$  & $\bm{c2\_2}$  & c3$\_$1  & c3\_2  & $\bm{c3\_3}$  & c4$\_$1}  &   c4$\_$2  & $\bm{c4\_3}$  & c5$\_$1} & c5$\_$2  & $\bm{c5\_3}$ \\
-%	\hline
-%    rf size & $\bm{3}$ & $\bm{5}$  & $\bm{10}$  & $\bm{14}$  & 24  & 32  & $\bm{40}$  & $\bm{60}$  & 76  & $\bm{92}$  & $\bm{124}$  & 164  & $\bm{196}$ \\
-%	\hline
-%	stride & $\bm{1}$ & 1   & $\bm{2}$  & 2  & $\bm{4}$  & 4  & $\bm{4}$  & $\bm{8}$  & 8  & $\bm{8}$  & $\bm{16}$  & 16  & $\bm{16}$ \\
-%	\hline
-%    \end{tabular}
-%   \end{table}   
-   
-   Based on the above analysis, we therefore make the following modifications: (1) Convolutionalized \textit{fc6, fc7} and fifth pooling layer are cut. (2) We design three  selection modes to select part or all convolutional layers with incremental receptive fields (see Table \ref{tab:receptivefield}) in VGG16 net. In first mode (denote as 5-convs), for each stage, the convolutional layer with largest receptive field is chosen, receptively,\textit{ conv1$\_$2, conv2$\_$2, conv3$\_$1, conv3$\_$3, conv4$\_$1, conv4$\_$3, conv5$\_$1, conv5$\_$3}. In second mode (denote as 7-convs), for the sake of preserving spatial information,\textit{ conv1$\_$1} and \textit{conv2$\_$1} are added. In third mode (denote as 16-convs), all convolutional layer are selected. The performance of these modes will be evaluated in experiment part. These three networks are shown in Fig.\ref{fig:ThreeFuseModes}. For each selected convolutional layer, the top of which add a additional convolutional layer with 1 $\times$ 1 kernel, denoted as side outputs. (3) All side outputs are upsampled to the same size of input. Upsampling is implemented via deconvolution which is initialized by bilinear interpolation. Upsampled features maps are staked and fed into a convolutional layer with 1 $\times$ 1 kernel to yield final output. 
-   
-  \begin{table}
+
+   \begin{table}
 	\label{tab:receptivefield} 
 	\centering
-	\caption{The receptive field and stride size in VGG16 net. Bolded layer is used in our architecture.}	
+	\caption{The receptive field and stride size in level 2 of our architecture.}	
  	\begin{tabular}{C{1cm}|*{16}{C{0.74cm}}} 
 	\hline
-	layer & $c1\_1$ & $c1\_2$  & $c2\_1$  & $c2\_2$  & $c3\_1$  & $c3\_2$  & $c3\_3$  & $c4\_1$  &   $c4\_2$  & $c4\_3$  & $c5\_1$ & $c5\_2$  & $c5\_3$ \\
+	layer & F1$\_$1 & F1$\_$2  & F2$\_$1  & F2$\_$2  & F3$\_$1  & F3$\_$2  & F3$\_$3  & F4$\_$1  &   F4$\_$2  & F4$\_$3  & F5$\_$1 & F5$\_$2  &F5$\_$3 \\
 	\hline
     rf size & 3 & 5  & 10 & 14  & 24  & 32  & 40  & 60  & 76  & 92 & 124  & 164  & 196 \\
 	\hline
 	stride & 1 & 1   & 2  & 2  & 4  & 4  & 4  &8  & 8  & 8  & 16  & 16  & 16 \\
 	\hline
     \end{tabular}
-   \end{table}      
-   
+   \end{table}         
+    
+   In level 2 of our architecture, feature maps with increasing  receptive field (see Table \ref{tab:receptivefield}) capture local information in different neighbourhood sizes and at different semantic levels. Therefore, if we integrate all these information together, it is helpful for extracting buildings with variational appearance or occlusion. We take a concrete instance  to show how HF-FCN works for such cases. In this case, F1$\_$1 with small receptive field  generates fine spatial resolution and responds to low level features like edges and corners (see Fig. \ref{fig:featuremapsofHF-FCN}(b)). F1$\_$2 functions like over-segmentation algorithm to grouping pixels with similar color or texture into a subregion (see Fig. \ref{fig:featuremapsofHF-FCN}(c)). In F2$\_$1, color information is disappear, shape information is augmented (see Fig. \ref{fig:featuremapsofHF-FCN}(d)). In F3$\_$3, it is surprised that  regions with significantly varying appearance are merged into a integrated building \textbf{by considering an unknown high level features} (see Fig. \ref{fig:featuremapsofHF-FCN}(e)). In F4$\_$2 and F5$\_$2, our network learned strong semantic knowledge  to distinguish dark rooftops with dim shadows and dark-green water (see Fig. \ref{fig:featuremapsofHF-FCN}(f)(g)). In level 3, we show that HF-FCN obtains reliable prediction by combining multi-level semantic information and  spatial information (see Fig. \ref{fig:featuremapsofHF-FCN}(h)). 
+
 \begin{figure}
 \centering
-\includegraphics[width=100mm]{ThreeFuseModes}
-\caption{Our three kinds of network architectures. The first row is five stages of VGG16 net, the second row is 16-convs, the third row is 7-convs, the fourth row is 5-convs.}
-\label{fig:ThreeFuseModes}
+\includegraphics[width=120mm]{featuremaps}
+\caption{(a) is input aerial image, feature maps generated from F1$\_$1 (b), F1$\_$2 (c), F2$\_$1 (d), F3$\_$3 (e), F4$\_$2 (f), F5$\_$2 (g), level 3 (h)}
+\label{fig:featuremapsofHF-FCN}
 \end{figure}
 
+%   In VGG16 Net, 
+%   For instance, the first stage generate low level semantic information, such as, regions with similar color or texture, and fine spatial resolution. On the contrary, the last stage outputs strong semantic features but coarse map
+%   
+%   There are three reasons that FCN-8s is not appropriate methods for building extraction. (1) \textbf{The output of 32 stride layers, including convolutionalized \textit{fc6, fc7} and fifth pooling layer, } (2) The output from FCN-8s is at one-eight of the input resolution. It is not dense enough for very high resolution remote sensing image. Though FCN4s and FCN2s can increase the resolution, they have little help for improving performance. Defective fusion strategy is the most likely reason. On the one hand, in \cite{Long2014Fully}, the coarse predictions from a late stage are upsampled and combined with prediction from its preceding stage using simple sum operation. (3) \textbf{ For instance, in FCN-8s,
+%   
+% There are two main considerations for choosing hierarchy architecture. Firstly,  buildings especially with large-size have variational appearances or occlusions.   
+   
+%\subsection{Architecture Alternatives} 
+%In this section, we firstly introduce a well-known semantic segmentation network, called fully convolutional network(FCN)\cite{Long2014Fully}. We attempt to extract footprints of building  using  architecture proposed by author and two modified versions. Our experiments show that these networks are not enough to accomplish building  extraction task. 
+%	In our experiments, we first directly apply the FCN-8s to extract building rooftop by replacing the loss function with sigmoid cross-entropy loss. In order to achieving better performance, the network is extended to FCN-4s, FCN-2s. Our experiments show that FCN-4s and FCN-2s get the best performance with overall recall of 70.19 $\%$ in precision recall breakeven point. According to our results, the first row of Fig. \ref{fig:FCN4s-results} indicates that FCN-4s has less ability to handle  objects with small size. The second row of Fig. \ref{fig:FCN4s-results} shows that it is hard for FCN to discriminate buildings with ground if their color is similar. To overcome these drawbacks, a improved FCN is introduced in next section. 
+%	
+%\begin{figure}
+%\centering
+%\subfigure[]{	
+%	\label{fig:InputImage}
+%	\includegraphics[width=35mm]{FCN4s-results-Input(a)}}
+%\subfigure[]{
+%	\label{fig:GroundTruth}
+%	\includegraphics[width=35mm]{FCN4s-results-GT(b)}}
+%\subfigure[]{
+%	\label{fig:FCN-4s}
+%	\includegraphics[width=35mm]{FCN4s-results-Prediction(c)}}
+%\subfigure[]{	
+%	\label{fig:InputImage}
+%	\includegraphics[width=35mm]{FCN4s-results-Input(d)}}
+%\subfigure[]{
+%	\label{fig:GroundTruth}
+%	\includegraphics[width=35mm]{FCN4s-results-GT(e)}}
+%\subfigure[]{
+%	\label{fig:FCN-4s}
+%	\includegraphics[width=35mm]{FCN4s-results-Prediction(f)}}
+%\caption{(a)(d) Input image. (b)(e) Ground truth. (c)(f) FCN-4s prediction.}
+%\label{fig:FCN4s-results}
+%\end{figure}
+% 
+        
 \subsection{Formulation}
-   Our goal is to predict probabilistic label image $\mathbf{M}$ from an input aerial image $\mathbf{S}$. Fig \ref{fig:ResultsofDifferentSupervision} shows an example of $\mathbf{S}$ and $\mathbf{M}$. We directly learn a mapping from raw pixels in $\mathbf{S}$ to a true label image  $\mathbf{M}$ by training the whole network. Here we formulate our approach for building extraction. We denote our input training data set by $\mathbf{I} = \{(\mathbf{S}_{n},\mathbf{M}_{n}),n = 1,\ldots,\vert \mathbf{S}_n \vert \}$, where sample $\mathbf{S}_{n} = \{s_{j}^{(n)}, j = 1,\ldots,\vert \mathbf{S}_n \vert \}$ denotes the raw input image and  $\mathbf{M}_{n} = \{m_{j}^{(n)}, j = 1,\ldots,\vert \mathbf{S_n} \vert\}$, $m_j^{(n)} \in \{0,1\}$ denotes the corresponding ground truth binary labelling map for satellite image $\mathbf{S}_{n}$.  Taking account of each image holistically and independently, thus, we adopt the subscript $n$ for notational simplicity. Our goal is to have a network that learns features from which it is possible to produce building maps approaching the ground truth. 
-    In our image-to-image training, the loss function is computed over all pixels in a training image $\mathbf{S} = \{s_{j}, j = 1,\ldots,\vert \mathbf{S} \vert\}$ and building map $\mathbf{M} = \{m_{j}, j = 1,\ldots,\vert \mathbf{S} \vert\}$, $m_j \in \{0,1\}$.
+   Our goal is to predict labelling image $\mathbf{\hat{M}}$ from an input aerial image $\mathbf{S}$.  We directly learn a mapping from raw pixels in $\mathbf{S}$ to a true label image  $\mathbf{\tilde{M}}$ by training the whole network. Fig. \ref{fig:AGroupOfExamples} shows an example of $\mathbf{S}$, $\mathbf{\hat{M}}$, $\mathbf{\tilde{M}}$. Here we formulate our approach for building extraction. We denote our input training data set by $\mathbf{I} = \{(\mathbf{S}_{n},\mathbf{\tilde{M}}_{n}),n = 1,\ldots,\vert \mathbf{S}_n \vert \}$, where sample $\mathbf{S}_{n} = \{s_{j}^{(n)}, j = 1,\ldots,\vert \mathbf{S}_n \vert \}$ denotes the raw input image and  $\mathbf{\tilde{M}}_{n} = \{\tilde{m}_{j}^{(n)}, j = 1,\ldots,\vert \mathbf{S_n} \vert\}$, $\tilde{m}_j^{(n)} \in \{0,1\}$ denotes the corresponding ground truth binary labelling map for satellite image $\mathbf{S}_{n}$.  Taking account of each image holistically and independently, thus, we adopt the subscript $n$ for notational simplicity. Our goal is to have a network that learns features from which it is possible to produce building maps approaching the ground truth. In our image-to-image training, the loss function is computed over all pixels in a training image $\mathbf{S} = \{s_{j}, j = 1,\ldots,\vert \mathbf{S} \vert\}$ and building map $\mathbf{\tilde{M}} = \{\tilde{m}_{j}, j = 1,\ldots,\vert \mathbf{S} \vert\}$, $\tilde{m}_j \in \{0,1\}$.
 For simplicity, we denote the collection of all standard network layer parameters as $\mathbf{W}$. For each pixel $j$ in a training image, the possibility that assigns it to building is denoted as $\hat{m}_j = Pr(m_j = 1|\mathbf{S};\mathbf{W})$. the definition of sigmoid cross-entropy loss function is shown in Eq (\ref{loss}).
 \begin{equation}
 	\label{loss}
-    \mathcal{L} = - \frac{1}{\vert \mathbf{S} \vert} \sum_{j \in \mathbf{S}} \left[ m_j \log{\hat{m}_j} + (1 - m_j)\log{(1 - \hat{m}_j)} \right]
+    \mathcal{L} = - \frac{1}{\vert \mathbf{S} \vert} \sum_{j \in \mathbf{S}} \left[ \tilde{m}_j \log{\hat{m}_j} + (1 - \tilde{m}_j)\log{(1 - \hat{m}_j)} \right]
 \end{equation}
+
+%\begin{figure}
+%\centering
+%\includegraphics[width=120mm]{AGroupOfExamples}
+%\caption{(a) Aerial image $\mathbf{S}$. (b) Ground truth $\mathbf{\tilde{M}}$. (c) Predicted label image $\mathbf{\hat{M}}$. }
+%\label{fig:AGroupOfExamples}
+%\end{figure}
+
+\begin{figure}
+\centering
+\subfigure[Aerial image $\mathbf{S}$]{	
+	\label{fig:AerialImage}
+	\includegraphics[width=38mm]{example-aerialImage}}	
+\subfigure[Ground truth $\mathbf{\tilde{M}}$]{
+	\label{fig:GroundTruth}
+	\includegraphics[width=38mm]{example-GT}}	
+\subfigure[Predicted image $\mathbf{\hat{M}}$]{
+	\label{fig:PredictedResutls}
+	\includegraphics[width=38mm]{example-prediction}}	
+\caption{ An example of the resulting predicted image.}
+\label{fig:AGroupOfExamples}
+\end{figure}
+
 
 %===========================================================
 \section{Experiments}
 In this section, we discuss our detailed implementation and report the performance of our proposed algorithm.
 
 \subsection{Dataset}
-   In our experiments, we use \textit{Massachusetts Buildings Dataset} (Mass. Buildings) proposed by Mnih \cite{Mnih2013Machine} and publicly available on website http://www.cs.toronto.e
-du/~vmnih/data/. The dataset consists of 151 aerial images of the Boston area, with each of the images being 1500 $\times$ 1500 pixels for an area of 2.25 square kilometers. Hence, the entire dataset covers roughly 340 square kilometers. The data is split into a training set of 137 images, a test set of 10 images and a validation set of 4 images. To train the network, we create image tiles for train and validation by means of cropping entire image using a sliding window with size of 256 $\times$ 256 pixels and stride of 64 pixels. When scanning the whole dataset, image tiles with too many white pixels are removed. \textbf{After scanning, train and validation dataset include 75938 tiles and 2500 tiles with corresponding building masks}. For testing, we use ten 1500 $\times$ 1500 entire images covering area excluded from the training data. \textbf{In our experiments, we find that it is benefit for prediction to scale input image into range of [0,1]. }
+   In our experiments, we use Massachusetts Buildings Dataset (\textit{Mass. Buildings}) proposed by Mnih \cite{Mnih2013Machine} and publicly available on website http://www.cs.toronto.e
+du/~vmnih/data/. The dataset consists of 151 aerial images of the Boston area, with each of the images being 1500$\times$1500 pixels for an area of 2.25 square kilometers. Hence, the entire dataset covers roughly 340 square kilometers. The data is split into a training set of 137 images, a test set of 10 images and a validation set of 4 images. To train the network, we create image tiles for train and validation by means of cropping entire image using a sliding window with size of 256$\times$256 pixels and stride of 64 pixels. When scanning the whole dataset, image tiles which include more than 160 white pixels are removed. After scanning, train and validation dataset include 75938 tiles and 2500 tiles with corresponding building masks. For testing, we use ten 1500$\times$1500 entire images covering area excluded from the training data. In our experiments, we find that it is benefit for prediction to scale the intensity of input image into range of [0,1]. 
 
 \subsection{Implementation}
-   The implementation of our networks are based on the publicly  available \textit{Caffe} \cite{Jia2014Caffe} Library. These three networks are fine-tuned from an initialization with the pre-trained VGG16 net model and trained in an end-to-end manner. All of our networks are trained using stochastic gradient descent with same hyper-parameters, including mini-batch size (18), initial learning rate ($10^{-5}$), learning rate is divided by 10 for each 5000 iterations, momentum (0.9), weight decay ($5\times 10^{-3}$), clip$\_$gradients (10000), number of training iterations (12000). We find that learned deconvolutions provide no noticeable improvements in our experiments, therefore,  $lr_mult$ is set to zero for all deconvolutional layers. It takes about six hours to train a network on a single NVIDIA Titan 12GB GPU.
+   The implementation of our networks are based on the publicly  available \textit{Caffe} \cite{Jia2014Caffe} Library. These three networks are fine-tuned from an initialization with the pre-trained VGG16 Net model and trained in an end-to-end manner. All of our networks are trained using stochastic gradient descent with same hyper-parameters, including mini-batch size (18), initial learning rate ($10^{-5}$), learning rate is divided by 10 for each 5000 iterations, momentum (0.9), weight decay (0.02), clip$\_$gradients (10000), number of training iterations (12000). We find that learned deconvolutions provide no noticeable improvements in our experiments, therefore,  lr$\_$mult is set to zero for all deconvolutional layers. It takes about six hours to train a network on a single NVIDIA Titan 12GB GPU.
 
-\subsection{Our Results}
-   
-   
-\subsection{Comparison}   
-   
+\subsection{Results}
+    To show the effectiveness of HF-FCN, we train and test our network on \textit{Mass. Buildings}. In order to comparing our results with previous works \cite{Mnih2013Machine}\cite{Saito2016Multiple}, we use three metrics to evaluate our results: (1)relaxed precision and recall scores. (2) standard precision and recall scores. (3) time consuming.  The relaxed precision is defined as the fraction of detected pixels that are within $\rho$ pixels of a detected pixel, while the relaxed recall is defined as the fraction of true pixels that are within $\rho$ pixels of a detected pixel.  In our  experiments, the slack parameter $\rho$ is set to 3, which is the same value as used in \cite{Mnih2013Machine}\cite{Saito2016Multiple}. Compared relaxed precision-recall curves are shown in  Fig. \ref{fig:relaxedcurve}. In order to evaluate our results more strictly, we set slack parameter $\rho$ as 0, that is to say, it becomes a standard precision and recall scores. Compared standard precision-recall curves are shown in  Fig. \ref{fig:standardcurve}. Additionally, time consuming is another important index to evaluate system performance. We calculate the mean time of processing ten test images in the same computer using the same program. Table \ref{tab:PerformanceComparision} shows that our method is able to not only significantly improve the performance , but dramatically decrease the time-consuming. 
+      
+\begin{figure}
+\centering
+\subfigure[]{	
+	\label{fig:relaxedcurve}
+	\includegraphics[width=55mm]{PrecisionRecallCurve}}
+\subfigure[]{
+	\label{fig:standardcurve}
+	\includegraphics[width=55mm]{PrecisionRecallCurve}}
+\caption{(a) Relaxed precision-recall curve. (b) standard precision-recall curve.}
+\label{fig:}
+\end{figure}
+ 
+  To prove our network having strong ability in extracting buildings with variational appearances and occlusions, we perform  further evaluation. \textbf{We crop five 256$\times$256 image patches that have large-size buildings with variational appearances or occlusions from test image of \textit{Mass. Buildings}. And then, we directly crop corresponding predictions from predicted images  generated by three models (Mnih-CNN+CRF\cite{Mnih2013Machine}, Saito-multi-MA$\&$CIS\cite{Saito2016Multiple} and ours).} Here, we binarize the probability map using a threshold of 0.5. Seven groups of example are shown in Fig. \ref{fig:ComparedResults}. In addition, Table \ref{tab:ComparedResultsRecall} shows the resulting recalls at breakeven points of standard precision recall curve for each patches. 
+  
     \begin{table} \label{tab:PerformanceComparision}
     \centering
-	\caption{Performance comparision with another methods. Recall here  means recall at breakeven. Time is computed in a single computer.}
-	\begin{tabular}{L{4.1cm}C{2.6cm}C{2.6cm}C{2.2cm}}    % |c|c|c|   |表示列线
+	\caption{Performance is compared with \cite{Mnih2013Machine}\cite{Saito2016Multiple}. Recall here  means recall at breakeven points. Time is computed in the same computer with a single NVIDIA Titan 12GB GPU.}
+	\begin{tabular}{L{38mm}C{26mm}C{26mm}C{26mm}}     
 	\toprule
 	& Recall(relax = 3) & Recall(relax = 0)& Time(s)\\
 	\midrule
-	Mnih-CNN & 0.9150 &  & \\
-	Mnih-CNN + CRF & 0.9211&  & \\
-	Saito-single-channel-MA & 0.9426 & & \\
-	Saito-multi-channel-MA-CIS & 0.9488 & & \\
-	Ours(16-convs) & $\bm{}$ & $\bm{}$ & $\bm{}$\\
+	Mnih-CNN\cite{Mnih2013Machine} & 0.9150 & 0.7661 & 8.70  \\ 
+	Mnih-CNN+CRF\cite{Mnih2013Machine} & 0.9211&  & \\ 
+	Saito-multi-MA\cite{Saito2016Multiple} & 0.9426 & 0.7858 & 67.72 \\
+	Saito-multi-MA$\&$CIS\cite{Saito2016Multiple} & 0.9488 & 0.7857 & 67.84 \\
+	Ours (HF-FCN) & $\bm{0.9643}$ & $\bm{0.8424}$ & $\bm{1.07}$\\
 	\bottomrule
 	\end{tabular}
-	\end{table}
- 
+	\end{table} 
+	 
+	\begin{table} \label{tab:ComparedResultsRecall}
+    \centering
+	\caption{Recall at selected region of the test images}
+	\begin{tabular}{L{38mm}*{9}{C{9mm}}}     
+	\toprule
+	Image ID & 01 & 02 & 03 &04 &05 & 06 &07 & mean\\
+	\midrule
+	Mnih-CNN+CRF\cite{Mnih2013Machine} & &  &  & &\\
+	Saito-multi-MA$\&$CIS\cite{Saito2016Multiple} & 0.773 & 0.915 & 0.857 & 0.789 & 0.945 & 0.773 &0.830 & 0.851\\
+	Ours (HF-FCN) & $\bm{0.874}$ & $\bm{0.964}$  & $\bm{0.901}$ & $\bm{0.986}$ & $\bm{0.933}$ & $\bm{0.840}$ &  $\bm{0.851}$ & $\bm{0.911}$\\
+	\bottomrule
+	\end{tabular}
+	\end{table} 
+ 	 
 \begin{figure}
 \centering
 \includegraphics[width=110mm]{ComparedResults}
-\caption{(a) Input image. (b) Ground Truth. (c) Mnih's result. (d) Saito's result}
-\label{fig:BadResults}
+\caption{(a) Input image. (b) Results of Mnih-CNN+CRF\cite{Mnih2013Machine}. (c) Results of Saito-multi-MA$\&$CIS\cite{Saito2016Multiple}. (d) Our results. 
+Correct results (TP) are shown in green, false positives are shown in blue, and false negatives are shown in red.}
+\label{fig:ComparedResults}
 \end{figure}
 
 %===========================================================
 \section{Conclusions}
-
+   In  this article, we proposed a improved fully convolutional network which is strongly capable of extracting buildings with variational appearance or occlusions. The network can take arbitrary-size image as input as long as GPU memory allowed. As a consequence, there is no need to label a whole image by cropping the image into small patches. Meanwhile, inconsistant border caused by cropped would not occurred in our system. Though a effective technique\cite{Saito2016Multiple}, namely, model averaging with spatial displacement, is proposed, it is troublesome to train a network eight times and predict labelling image with the same times. On the other hand, we demonstrate that our network  is generally adapt to various types of aerial scenes selected from real-world data. Furthermore, our architecture can be easily extended to extract multi-objects in remote sensing imagery. Consequently, we believe that our technique potentially provides a generic solution to understand complex aerial scenes.
+	
 
 %===========================================================
 \bibliographystyle{splncs}

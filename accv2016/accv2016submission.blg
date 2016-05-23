@@ -1,13 +1,13 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: accv2016submission.aux
 The style file: splncs.bst
 Database file #1: egbib.bib
-Repeated entry---line 644 of file egbib.bib
+Repeated entry---line 614 of file egbib.bib
+ : @article{ok2013automated
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 641 of file egbib.bib
  : @article{chen2014shadow
  :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 785 of file egbib.bib
- : @article{Xie2015Holistically
- :                             ,
 I'm skipping whatever remains of this entry
 Warning--empty journal in ngoautomatic
 Warning--there's no year in ngoautomatic

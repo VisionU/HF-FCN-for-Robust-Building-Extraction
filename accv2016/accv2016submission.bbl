@@ -34,12 +34,19 @@ Cote, M., Saeedi, P.:
 \newblock Geoscience and Remote Sensing, IEEE Transactions on \textbf{51}
   (2013)  313--328
 
-\bibitem{ghaffarian2014automaticPFICA}
-Ghaffarian, S., Ghaffarian, S.:
-\newblock Automatic building detection based on purposive fastica (pfica)
-  algorithm using monocular high resolution google earth images.
-\newblock ISPRS Journal of Photogrammetry and Remote Sensing \textbf{97} (2014)
-   152--159
+\bibitem{B2008Building}
+Sirmacek, B., Unsalan, C.:
+\newblock Building detection from aerial images using invariant color features
+  and shadow information.
+\newblock In: International Symposium on Computer and Information Sciences.
+  (2008)  1--5
+
+\bibitem{ok2013automated}
+Ok, A.O., Senaras, C., Yuksel, B.:
+\newblock Automated detection of arbitrarily shaped buildings in complex
+  environments from monocular vhr optical satellite imagery.
+\newblock Geoscience and Remote Sensing, IEEE Transactions on \textbf{51}
+  (2013)  1701--1717
 
 \bibitem{chen2014shadow}
 Chen, D., Shang, S., Wu, C.:
@@ -47,22 +54,16 @@ Chen, D., Shang, S., Wu, C.:
   remote sensing image.
 \newblock Journal of Multimedia \textbf{9} (2014)  181--188
 
-\bibitem{dornaika2015object}
-Dornaika, F., Moujahid, A., Bosaghzadeh, A., El~Merabet, Y., Ruichek, Y.:
-\newblock Object classification using hybrid holistic descriptors: Application
-  to building detection in aerial orthophotos.
-\newblock Polibits (2015)  11--17
-
-\bibitem{baluyan2013novel}
-Baluyan, H., Joshi, B., Al~Hinai, A., Woon, W.L.:
-\newblock Novel approach for rooftop detection using support vector machine.
-\newblock ISRN Machine Vision \textbf{2013} (2013)
-
 \bibitem{ngoautomatic}
 Ngo, T.T., Collet, C., Mazet, V.:
 \newblock
 \newblock (Automatic rectangular building detection from vhr aerial imagery
   using shadow and image segmentation)
+
+\bibitem{baluyan2013novel}
+Baluyan, H., Joshi, B., Al~Hinai, A., Woon, W.L.:
+\newblock Novel approach for rooftop detection using support vector machine.
+\newblock ISRN Machine Vision \textbf{2013} (2013)
 
 \bibitem{li2015robust}
 Li, E., Femiani, J., Xu, S., Zhang, X., Wonka, P.:
@@ -82,6 +83,24 @@ Saito, S., Yamashita, Y., Aoki, Y.:
   neural networks.
 \newblock Journal of Imaging Science \& Technology \textbf{60} (2016)
 
+\bibitem{ghaffarian2014automaticPFICA}
+Ghaffarian, S., Ghaffarian, S.:
+\newblock Automatic building detection based on purposive fastica (pfica)
+  algorithm using monocular high resolution google earth images.
+\newblock ISPRS Journal of Photogrammetry and Remote Sensing \textbf{97} (2014)
+   152--159
+
+\bibitem{dornaika2015object}
+Dornaika, F., Moujahid, A., Bosaghzadeh, A., El~Merabet, Y., Ruichek, Y.:
+\newblock Object classification using hybrid holistic descriptors: Application
+  to building detection in aerial orthophotos.
+\newblock Polibits (2015)  11--17
+
+\bibitem{Long2014Fully}
+Long, J., Shelhamer, E., Darrell, T.:
+\newblock Fully convolutional networks for semantic segmentation.
+\newblock Computer Science \textbf{79} (2014)  1337--1342
+
 \bibitem{chen14semantic}
 Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L.:
 \newblock Semantic image segmentation with deep convolutional nets and fully
@@ -98,20 +117,10 @@ Noh, H., Hong, S., Han, B.:
 \newblock Learning deconvolution network for semantic segmentation.
 \newblock (2015)
 
-\bibitem{Long2014Fully}
-Long, J., Shelhamer, E., Darrell, T.:
-\newblock Fully convolutional networks for semantic segmentation.
-\newblock Computer Science \textbf{79} (2014)  1337--1342
-
 \bibitem{Simonyan2014Very}
 Simonyan, K., Zisserman, A.:
 \newblock Very deep convolutional networks for large-scale image recognition.
 \newblock Eprint Arxiv (2014)
-
-\bibitem{Xie2015Holistically}
-Xie, S., Tu, Z.:
-\newblock Holistically-nested edge detection.
-\newblock Computer Science (2015)  1395--1403
 
 \bibitem{Jia2014Caffe}
 Jia, Y., Shelhamer, E., Donahue, J., Karayev, S., Long, J., Girshick, R.,

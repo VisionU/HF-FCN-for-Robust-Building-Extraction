@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.26)  23 MAY 2016 20:06
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.26)  25 MAY 2016 12:15
 entering extended mode
 **accv2016submission.tex
 
@@ -381,119 +381,122 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
 
 
-] [2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-<AerialImages.pdf, id=20, 830.10126pt x 225.84375pt>
+]
+<AerialImages.pdf, id=12, 830.10126pt x 225.84375pt>
 File: AerialImages.pdf Graphic file (type pdf)
  <use AerialImages.pdf>
-Package pdftex.def Info: AerialImages.pdf used on input line 72.
+Package pdftex.def Info: AerialImages.pdf used on input line 63.
 (pdftex.def)             Requested size: 341.43306pt x 92.89288pt.
 
-[4 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/AerialI
+Underfull \vbox (badness 5105) has occurred while \output is active []
+
+ [2]
+[3 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/AerialI
 mages.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
 
 pdfTeX warning: pdflatex (file D:/左童春个人数据/Project-BuildingDetecti
-on/MyPaper/accv2016/hierarchicalFCN4.pdf): PDF inclusion: found PDF version <1.
+on/MyPaper/accv2016/hierarchicalFCN5.pdf): PDF inclusion: found PDF version <1.
 7>, but at most version <1.5> allowed
-<hierarchicalFCN4.pdf, id=46, 615.7404pt x 423.14085pt>
-File: hierarchicalFCN4.pdf Graphic file (type pdf)
+<hierarchicalFCN5.pdf, id=45, 728.84294pt x 428.19975pt>
+File: hierarchicalFCN5.pdf Graphic file (type pdf)
 
-<use hierarchicalFCN4.pdf>
-Package pdftex.def Info: hierarchicalFCN4.pdf used on input line 85.
-(pdftex.def)             Requested size: 341.43306pt x 234.63934pt.
- [5 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/hierar
-chicalFCN4.pdf>]
-<featuremaps.pdf, id=54, 1101.11375pt x 619.31375pt>
+<use hierarchicalFCN5.pdf>
+Package pdftex.def Info: hierarchicalFCN5.pdf used on input line 97.
+(pdftex.def)             Requested size: 341.43306pt x 200.60052pt.
+ [5]
+<featuremaps.pdf, id=52, 1101.11375pt x 619.31375pt>
 File: featuremaps.pdf Graphic file (type pdf)
  <use featuremaps.pdf>
-Package pdftex.def Info: featuremaps.pdf used on input line 109.
+Package pdftex.def Info: featuremaps.pdf used on input line 121.
 (pdftex.def)             Requested size: 341.43306pt x 192.03253pt.
 
-[6 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/feature
-maps.pdf>] <example-aerialImage.pdf, id=81, 752.8125pt x 752.8125pt>
+[6 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/hierarc
+hicalFCN5.pdf>] <example-aerialImage.pdf, id=61, 752.8125pt x 752.8125pt>
 File: example-aerialImage.pdf Graphic file (type pdf)
 
 <use example-aerialImage.pdf>
-Package pdftex.def Info: example-aerialImage.pdf used on input line 169.
+Package pdftex.def Info: example-aerialImage.pdf used on input line 181.
 (pdftex.def)             Requested size: 108.12047pt x 108.11543pt.
- <example-GT.pdf, id=82, 752.8125pt x 752.8125pt>
+ <example-GT.pdf, id=62, 752.8125pt x 752.8125pt>
 File: example-GT.pdf Graphic file (type pdf)
 
 <use example-GT.pdf>
-Package pdftex.def Info: example-GT.pdf used on input line 172.
+Package pdftex.def Info: example-GT.pdf used on input line 184.
 (pdftex.def)             Requested size: 108.12047pt x 108.11543pt.
- <example-prediction.pdf, id=83, 752.8125pt x 752.8125pt>
+ <example-prediction.pdf, id=63, 752.8125pt x 752.8125pt>
 File: example-prediction.pdf Graphic file (type pdf)
 
 <use example-prediction.pdf>
-Package pdftex.def Info: example-prediction.pdf used on input line 175.
+Package pdftex.def Info: example-prediction.pdf used on input line 187.
 (pdftex.def)             Requested size: 108.12047pt x 108.11543pt.
- [7 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/exampl
-e-aerialImage.pdf> <D:/左童春个人数据/Project-BuildingDetection/MyPaper/
-accv2016/example-GT.pdf> <D:/左童春个人数据/Project-BuildingDetection/My
-Paper/accv2016/example-prediction.pdf>]
+ [7 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/featur
+emaps.pdf> <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016
+/example-aerialImage.pdf> <D:/左童春个人数据/Project-BuildingDetection/M
+yPaper/accv2016/example-GT.pdf> <D:/左童春个人数据/Project-BuildingDetec
+tion/MyPaper/accv2016/example-prediction.pdf>]
+[8] <PrecisionRecallCurve_3.pdf, id=126, 517.45322pt x 398.9304pt>
+File: PrecisionRecallCurve_3.pdf Graphic file (type pdf)
 
-pdfTeX warning: pdflatex (file D:/左童春个人数据/Project-BuildingDetecti
-on/MyPaper/accv2016/PrecisionRecallCurve.pdf): PDF inclusion: found PDF version
- <1.7>, but at most version <1.5> allowed
-<PrecisionRecallCurve.pdf, id=123, 368.87813pt x 305.64188pt>
-File: PrecisionRecallCurve.pdf Graphic file (type pdf)
+<use PrecisionRecallCurve_3.pdf>
+Package pdftex.def Info: PrecisionRecallCurve_3.pdf used on input line 212.
+(pdftex.def)             Requested size: 167.87125pt x 129.41953pt.
 
-<use PrecisionRecallCurve.pdf>
-Package pdftex.def Info: PrecisionRecallCurve.pdf used on input line 199.
-(pdftex.def)             Requested size: 156.49014pt x 129.66055pt.
-File: PrecisionRecallCurve.pdf Graphic file (type pdf)
- <use PrecisionRecallCurve.pdf>
-Package pdftex.def Info: PrecisionRecallCurve.pdf used on input line 202.
-(pdftex.def)             Requested size: 156.49014pt x 129.66055pt.
- [8]
-<ComparedResults.pdf, id=127, 1100.11pt x 2017.5375pt>
+<PrecisionRecallCurve_0.pdf, id=127, 520.34402pt x 398.9304pt>
+File: PrecisionRecallCurve_0.pdf Graphic file (type pdf)
+
+<use PrecisionRecallCurve_0.pdf>
+Package pdftex.def Info: PrecisionRecallCurve_0.pdf used on input line 215.
+(pdftex.def)             Requested size: 167.87125pt x 128.70123pt.
+
+<ComparedResults.pdf, id=128, 1100.11pt x 2017.5375pt>
 File: ComparedResults.pdf Graphic file (type pdf)
 
 <use ComparedResults.pdf>
-Package pdftex.def Info: ComparedResults.pdf used on input line 241.
+Package pdftex.def Info: ComparedResults.pdf used on input line 256.
 (pdftex.def)             Requested size: 312.9803pt x 573.98827pt.
 
 
-LaTeX Warning: Float too large for page by 69.59999pt on input line 245.
+LaTeX Warning: Float too large for page by 69.59999pt on input line 260.
 
 
-Underfull \vbox (badness 7344) has occurred while \output is active []
+Underfull \vbox (badness 1867) has occurred while \output is active []
 
  [9 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/Precis
-ionRecallCurve.pdf>] [10 <D:/左童春个人数据/Project-BuildingDetection/My
-Paper/accv2016/ComparedResults.pdf>]
+ionRecallCurve_3.pdf> <D:/左童春个人数据/Project-BuildingDetection/MyPap
+er/accv2016/PrecisionRecallCurve_0.pdf>] [10 <D:/左童春个人数据/Project-
+BuildingDetection/MyPaper/accv2016/ComparedResults.pdf>]
 (D:\左童春个人数据\Project-BuildingDetection\MyPaper\accv2016\accv2016su
 bmission.bbl [11]) [12]
 (D:\左童春个人数据\Project-BuildingDetection\MyPaper\accv2016\accv2016su
 bmission.aux) ) 
 Here is how much of TeX's memory you used:
- 3114 strings out of 495354
- 39362 string characters out of 3183858
- 108906 words of memory out of 3000000
- 6209 multiletter control sequences out of 15000+200000
- 16694 words of font info for 63 fonts, out of 3000000 for 9000
+ 3121 strings out of 495354
+ 39585 string characters out of 3183858
+ 108933 words of memory out of 3000000
+ 6216 multiletter control sequences out of 15000+200000
+ 16335 words of font info for 62 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,15n,25p,2511b,370s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,15n,29p,1698b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/CT
 EX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/CTEX/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmbx7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-bx9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/CTEX/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.
-pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb><C:/CTEX/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><
-C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/CTEX/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmss8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmss9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/CTEX/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb>
-Output written on accv2016submission.pdf (12 pages, 28905184 bytes).
+bx9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb
+><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb><C:/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/
+CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/CTEX/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmss8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmss9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/CTEX/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmti10.pfb>
+Output written on accv2016submission.pdf (12 pages, 29643672 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
+ 234 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

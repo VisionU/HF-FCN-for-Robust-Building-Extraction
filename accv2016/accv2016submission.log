@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.26)  25 MAY 2016 12:15
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.26)  25 MAY 2016 22:33
 entering extended mode
 **accv2016submission.tex
 
@@ -382,17 +382,16 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 
 ]
-<AerialImages.pdf, id=12, 830.10126pt x 225.84375pt>
+<AerialImages.pdf, id=13, 830.10126pt x 225.84375pt>
 File: AerialImages.pdf Graphic file (type pdf)
  <use AerialImages.pdf>
 Package pdftex.def Info: AerialImages.pdf used on input line 63.
 (pdftex.def)             Requested size: 341.43306pt x 92.89288pt.
 
-Underfull \vbox (badness 5105) has occurred while \output is active []
+Underfull \vbox (badness 5050) has occurred while \output is active []
 
- [2]
-[3 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/AerialI
-mages.pdf>]
+ [2 <D:/左童春个人数据/Project-BuildingDetection/MyPaper/accv2016/Aerial
+Images.pdf>] [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
@@ -479,7 +478,7 @@ Here is how much of TeX's memory you used:
  6216 multiletter control sequences out of 15000+200000
  16335 words of font info for 62 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,15n,29p,1698b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,15n,29p,1707b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/CT
 EX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/CTEX/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmbx7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
@@ -494,7 +493,7 @@ e1/public/amsfonts/cm/cmss8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmss9.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/CTEX/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb>
-Output written on accv2016submission.pdf (12 pages, 29643672 bytes).
+Output written on accv2016submission.pdf (12 pages, 29643446 bytes).
 PDF statistics:
  234 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

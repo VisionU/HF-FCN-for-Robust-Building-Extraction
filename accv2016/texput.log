@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.26)  20 MAY 2016 20:54
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2015.10.26)  28 MAY 2016 12:23
 entering extended mode
 **egbib.tex
 
@@ -9,11 +9,11 @@ entering extended mode
 
  
 Here is how much of TeX's memory you used:
- 2 strings out of 495354
- 15 string characters out of 3183858
+ 2 strings out of 495355
+ 15 string characters out of 3183881
  44842 words of memory out of 3000000
  3276 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  0i,0n,0p,1b,6s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+No pages of output.

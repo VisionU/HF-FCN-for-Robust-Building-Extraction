@@ -15,4 +15,7 @@ You can't pop an empty literal stack for entry ngoautomatic
 while executing---line 1070 of file splncs.bst
 Warning--empty journal in Zheng2015Conditional
 Warning--empty journal in Noh2015Learning
-(There were 3 error messages)
+Warning--there's no year in pascal-voc-2012
+You can't pop an empty literal stack for entry pascal-voc-2012
+while executing---line 1070 of file splncs.bst
+(There were 4 error messages)

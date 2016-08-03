@@ -83,19 +83,6 @@ Saito, S., Yamashita, Y., Aoki, Y.:
   neural networks.
 \newblock Journal of Imaging Science \& Technology \textbf{60} (2016)
 
-\bibitem{ghaffarian2014automaticPFICA}
-Ghaffarian, S., Ghaffarian, S.:
-\newblock Automatic building detection based on purposive fastica (pfica)
-  algorithm using monocular high resolution google earth images.
-\newblock ISPRS Journal of Photogrammetry and Remote Sensing \textbf{97} (2014)
-   152--159
-
-\bibitem{dornaika2015object}
-Dornaika, F., Moujahid, A., Bosaghzadeh, A., El~Merabet, Y., Ruichek, Y.:
-\newblock Object classification using hybrid holistic descriptors: Application
-  to building detection in aerial orthophotos.
-\newblock Polibits (2015)  11--17
-
 \bibitem{Long2014Fully}
 Long, J., Shelhamer, E., Darrell, T.:
 \newblock Fully convolutional networks for semantic segmentation.
@@ -116,6 +103,26 @@ Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V.:
 Noh, H., Hong, S., Han, B.:
 \newblock Learning deconvolution network for semantic segmentation.
 \newblock (2015)
+
+\bibitem{pascal-voc-2012}
+Everingham, M., Van~Gool, L., Williams, C.K.I., Winn, J., Zisserman, A.:
+\newblock The {PASCAL} {V}isual {O}bject {C}lasses {C}hallenge 2012 {(VOC2012)}
+  {R}esults.
+\newblock
+  (http://www.pascal-network.org/challenges/VOC/voc2012/workshop/index.html)
+
+\bibitem{ghaffarian2014automaticPFICA}
+Ghaffarian, S., Ghaffarian, S.:
+\newblock Automatic building detection based on purposive fastica (pfica)
+  algorithm using monocular high resolution google earth images.
+\newblock ISPRS Journal of Photogrammetry and Remote Sensing \textbf{97} (2014)
+   152--159
+
+\bibitem{dornaika2015object}
+Dornaika, F., Moujahid, A., Bosaghzadeh, A., El~Merabet, Y., Ruichek, Y.:
+\newblock Object classification using hybrid holistic descriptors: Application
+  to building detection in aerial orthophotos.
+\newblock Polibits (2015)  11--17
 
 \bibitem{Simonyan2014Very}
 Simonyan, K., Zisserman, A.:

@@ -5,7 +5,7 @@
 \citation{baluyan2013novel,li2015robust}
 \citation{Mnih2013Machine}
 \citation{Saito2016Multiple}
-\@writefile{toc}{\contentsline {title}{HF-FCN: Hierarchical Fusion Fully Convolutional Network for Robust Building Extraction}{1}}
+\@writefile{toc}{\contentsline {title}{HF-FCN: Hierarchically Fused Fully Convolutional Network for Robust Building Extraction}{1}}
 \@writefile{toc}{\contentsline {author}{Anonymous ACCV 2016 submission}{1}}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
 \citation{Long2014Fully}
@@ -13,13 +13,14 @@
 \citation{Zheng2015Conditional}
 \citation{Noh2015Learning}
 \citation{chen14semantic,Zheng2015Conditional}
+\citation{pascal-voc-2012}
 \citation{Long2014Fully}
 \citation{Noh2015Learning}
 \citation{Mnih2013Machine}
 \citation{Mnih2013Machine,Saito2016Multiple}
 \citation{Saito2016Multiple}
 \newlabel{fig:AerialImages}{{1}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Examples of aerial image}}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Examples of aerial image. (a) Occlusions (shown in red rectangle). (b) Variant appearances. (c) Low contrast. (d) A large number of tiny buildings. }}{2}}
 \citation{noronha2001detection,nosrati2009novel,izadi2012three,wang2015efficient}
 \citation{cote2013automatic}
 \citation{ghaffarian2014automaticPFICA}
@@ -27,7 +28,7 @@
 \citation{ngoautomatic}
 \citation{baluyan2013novel}
 \citation{li2015robust}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Related Works}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{3}}
 \newlabel{section:relatedworks}{{2}{3}}
 \citation{Mnih2013Machine}
 \citation{Saito2016Multiple}
@@ -35,13 +36,12 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3}System Overview}{5}}
 \newlabel{section:systemoverview}{{3}{5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Network Architecture}{5}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces The receptive field and stride size in level 2 in our architecture.}}{5}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces The receptive field (rf) and stride size of Level 2 in our architecture.}}{5}}
 \newlabel{tab:receptivefield}{{1}{5}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Our network architecture.}}{6}}
 \newlabel{fig:hierarchicalFCN}{{2}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Formulation}{6}}
-\citation{Mnih2013Machine}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces (a) is input aerial image, feature maps generated from F1$\_$1 (b), F1$\_$2 (c), F2$\_$1 (d), F3$\_$3 (e), F4$\_$2 (f), F5$\_$2 (g), level 3 (h)}}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces (a) Input aerial image. (b - g) Feature maps generated from U1$\_$1, U1$\_$2, U2$\_$1, U3$\_$3, U4$\_$2, U5$\_$2, respectively. (h) Predicted labelling map.}}{7}}
 \newlabel{fig:featuremapsofHF-FCN}{{3}{7}}
 \newlabel{loss}{{1}{7}}
 \newlabel{fig:AerialImage}{{4(a)}{7}}
@@ -55,16 +55,15 @@
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Ground truth $\mathbf {\mathaccentV{tilde}07E{M}}$}}}{7}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Predicted image $\mathbf {\mathaccentV{hat}05E{M}}$}}}{7}}
 \newlabel{fig:AGroupOfExamples}{{4}{7}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{7}}
-\newlabel{section:experiments}{{4}{7}}
+\citation{Mnih2013Machine}
 \citation{Jia2014Caffe}
 \citation{Mnih2013Machine,Saito2016Multiple}
 \citation{Mnih2013Machine,Saito2016Multiple}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{8}}
+\newlabel{section:experiments}{{4}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Dataset}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Training Settings}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Results}{8}}
-\citation{Mnih2013Machine}
-\citation{Saito2016Multiple}
 \citation{Mnih2013Machine,Saito2016Multiple}
 \citation{Mnih2013Machine,Saito2016Multiple}
 \citation{Mnih2013Machine}
@@ -76,7 +75,6 @@
 \citation{Mnih2013Machine}
 \citation{Saito2016Multiple}
 \citation{Mnih2013Machine}
-\citation{Saito2016Multiple}
 \citation{Saito2016Multiple}
 \newlabel{fig:relaxedcurve}{{5(a)}{9}}
 \newlabel{sub@fig:relaxedcurve}{{(a)}{9}}
@@ -88,8 +86,10 @@
 \newlabel{fig:}{{5}{9}}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Performance is compared with \cite  {Mnih2013Machine,Saito2016Multiple}. Recall here means recall at breakeven points. Time is computed in the same computer with a single NVIDIA Titan 12GB GPU.}}{9}}
 \newlabel{tab:PerformanceComparision}{{2}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces (a) Input images. (b) Results of Mnih-CNN+CRF\cite  {Mnih2013Machine}. (c) Results of Saito-multi-MA$\&$CIS\cite  {Saito2016Multiple}. (d) Our results. Correct results (TP) are shown in green, false positives are shown in blue, and false negatives are shown in red.}}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces (a) Input images. (b) Results of Mnih-CNN+CRF \cite  {Mnih2013Machine}. (c) Results of Saito-multi-MA$\&$CIS \cite  {Saito2016Multiple}. (d) Our results. Correct results (TP) are shown in green, false positives (FP) are shown in blue, and false negatives (FN) are shown in red.}}{10}}
 \newlabel{fig:ComparedResults}{{6}{10}}
+\citation{Mnih2013Machine}
+\citation{Saito2016Multiple}
 \bibstyle{splncs}
 \bibdata{egbib}
 \bibcite{noronha2001detection}{1}
@@ -97,23 +97,24 @@
 \bibcite{izadi2012three}{3}
 \bibcite{wang2015efficient}{4}
 \bibcite{cote2013automatic}{5}
-\bibcite{B2008Building}{6}
-\bibcite{ok2013automated}{7}
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Recall at selected region of the test images}}{11}}
 \newlabel{tab:ComparedResultsRecall}{{3}{11}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions}{11}}
 \newlabel{section:conclusions}{{5}{11}}
+\bibcite{B2008Building}{6}
+\bibcite{ok2013automated}{7}
 \bibcite{chen2014shadow}{8}
 \bibcite{ngoautomatic}{9}
 \bibcite{baluyan2013novel}{10}
 \bibcite{li2015robust}{11}
 \bibcite{Mnih2013Machine}{12}
 \bibcite{Saito2016Multiple}{13}
-\bibcite{ghaffarian2014automaticPFICA}{14}
-\bibcite{dornaika2015object}{15}
-\bibcite{Long2014Fully}{16}
-\bibcite{chen14semantic}{17}
-\bibcite{Zheng2015Conditional}{18}
-\bibcite{Noh2015Learning}{19}
-\bibcite{Simonyan2014Very}{20}
-\bibcite{Jia2014Caffe}{21}
+\bibcite{Long2014Fully}{14}
+\bibcite{chen14semantic}{15}
+\bibcite{Zheng2015Conditional}{16}
+\bibcite{Noh2015Learning}{17}
+\bibcite{pascal-voc-2012}{18}
+\bibcite{ghaffarian2014automaticPFICA}{19}
+\bibcite{dornaika2015object}{20}
+\bibcite{Simonyan2014Very}{21}
+\bibcite{Jia2014Caffe}{22}

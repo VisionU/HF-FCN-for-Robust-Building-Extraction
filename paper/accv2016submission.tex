@@ -1,0 +1,68 @@
+% Updated in February 2016 by Hwann-Tzong Chen
+% Updated in May 2014 by Hideo Saito
+% Updated in March 2012 by Yasuyuki Matsushita
+% Updated in April 2002 by Antje Endemann, ...., and in March 2010 by Reinhard Klette
+% Based on CVPR 07 and LNCS style, with modifications by DAF, AZ and elle 2008, AA 2010, ACCV 2010
+
+\documentclass[runningheads]{llncs}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb} % define this before the line numbering.
+\usepackage{ruler}
+	\usepackage{color}
+\usepackage{subfigure}
+\usepackage{mathrsfs}
+\usepackage[marginal]{footmisc}
+\renewcommand{\thefootnote}{}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{url}
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
+\newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
+\newcolumntype{L}[1]{>{\PreserveBackslash\raggedright}p{#1}}
+
+\newcommand{\xj}[1]{(\textcolor{red}{#1})}
+%===========================================================
+\begin{document}
+\pagestyle{headings}
+\mainmatter
+
+\def\ACCV16SubNumber{663}  % Insert your submission number here
+
+%===========================================================
+\title{HF-FCN: Hierarchically Fused Fully Convolutional  Network for Robust Building Extraction} % Replace with your title
+%\subtitle{Robust Building Extraction from Large-scale Aerial Scene with  hierarchically fused Fully Convolutional Network}
+\titlerunning{ACCV-16 submission ID \ACCV16SubNumber}
+\authorrunning{ACCV-16 submission ID \ACCV16SubNumber}
+
+\author{Tongchun Zuo and Xuejin Chen}
+\institute{CAS Key Laboratory of Technology in Geo-spatial Information Processing and Application System \\ University of Science and Technology of China}
+
+\maketitle
+%===========================================================
+\begin{abstract}
+  Automatic building extraction from remote sensing images plays an important role in a diverse range of applications. However, it is significantly challenging to extract arbitrary-size buildings with largely variant appearances or occlusions. In this paper, we propose a robust system employing a novel hierarchically fused fully convolutional network~(HF-FCN), which effectively integrates the information generated from a group of neurons with multi-scale receptive fields. Our architecture takes an aerial image as the input without warping or cropping it and directly generates the building map. The experiment results tested on a public aerial imagery dataset demonstrate that our method surpasses state-of-the-art methods in the building detection accuracy and significantly reduces the time cost. 
+
+\end{abstract}
+
+%===========================================================
+\input{intro}
+\input{algorithm}
+\input{result}   
+
+%===========================================================
+\section{Conclusions}
+\label{section:conclusions}
+   In  this article, we propose a novel fully convolutional network which is  strongly capable of extracting buildings of arbitrary sizes, variant appearances or occlusions without any post-processing. Meanwhile, it further improves the overall accuracy. The proposed network can take arbitrary-size image as the input as long as the GPU memory allows. Compared with patch-based methods, there is no need to label a whole image by cropping the image into small patches. As consequence, inconsistent border caused by cropping would not occur in our system. Moreover, the time cost is tremendously reduced using our HF-FCN. 
+   The proposed method is demonstrated robust to various types of aerial scenes selected from real-world data. Furthermore, our architecture can be easily extended to extract multi-objects in remote sensing imagery. 
+   Consequently, we believe that our technique potentially provides a generic solution to understand complex aerial scenes.
+	
+%HF-FCN provides a strong ability to extracting building rooftops even with significantly variant appearancess and severely occlusions   Meanwhile, it further improves the overall accuracy than \cite{Mnih2013Machine}\cite{Saito2016Multiple}. Compared with patch based methods \cite{Mnih2013Machine}\cite{Saito2016Multiple}, HF-FCN takes whole images as inputs without cropping or warping them to a fixed size and directly outputs segmentation maps by one pass of forward propagation. 
+%===========================================================
+\bibliographystyle{splncs}
+\bibliography{hf-fcn}
+
+%this would normally be the end of your paper, but you may also have an appendix
+%within the given limit of number of pages
+\end{document}

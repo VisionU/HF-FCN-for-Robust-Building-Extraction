@@ -1,0 +1,7 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: accv2016submission.aux
+The style file: splncs.bst
+Database file #1: hf-fcn.bib
+Warning--there's no year in pascal-voc-2012
+You can't pop an empty literal stack for entry pascal-voc-2012
+while executing---line 1070 of file splncs.bst
+(There was 1 error message)

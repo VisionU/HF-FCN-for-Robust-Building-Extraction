@@ -36,7 +36,7 @@ $ python ../../scripts/test_evaluation.py   <br />
 | Mnih-CNN+CRF \cite{Mnih2013Machine}            | 0.9282              | 0.7638              | 26.60    |
 | Saito-multi-MA \cite{Saito2016Multiple}        | 0.9503              | 0.7873              | 67.72    |
 | Saito-multi-MA$\&$CIS \cite{Saito2016Multiple} | 0.9509              | 0.7872              | 67.84    |
-| Ours (HF-FCN)                                  | 0.9643              | 0.8424              | 1.07     |
+| **Ours (HF-FCN)                                  | 0.9643              | 0.8424              | 1.07     **|
 
 
 # Pre-trained models and Predicted results

@@ -4,6 +4,7 @@ This is a state-of-the-art project for building extraction in high resolution re
 - Last version caffe
 - OpenCV 3.1.0
 - NumPy
+- Boost 1.59.0
 - CUDA V8.0
 - CUDNN V5.0
 
@@ -18,10 +19,10 @@ $ nohup python solve.py&  <br />
 
 # Prediction
 $ cd results/   <br />
-$ python ../scripts/test_prediction.py   <br />
- <\qquad>   --model ../models/predict.prototxt   <br />
- <\qquad>	 --weight ../weights/HF-FCN_iter_12000.caffemodel   <br />
- \qquad	 --img_dir /data/mass_buildings/test/sat   <br />
+$ python ../scripts/run_prediction.py   <br />
+ \qquad  --model ../models/HF-FCN_Models/BasicNet/predict.prototxt   <br />
+ \qquad	 --weight ../weights/HF-FCN_iter_12000.caffemodel   <br />
+ \qquad	 --img_dir /data/mass_buildings/source/test/sat   <br />
 
 # Evaluation
 $ cd results/prediction_12000   <br />

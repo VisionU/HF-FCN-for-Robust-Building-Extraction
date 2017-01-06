@@ -41,13 +41,13 @@ $ python ../../scripts/test_evaluation.py   <br />
 
 
 # Pre-trained models
-HF-FCN16-iter-12000.caffemodel
-Minh13-Machine.caffemodel
+HF-FCN16-iter-12000.caffemodel   <br />
+Minh13-Machine.caffemodel   <br />
 [Saito16-Multiple-caffemodels](https://github.com/mitmul/ssai-cnn/wiki/Pre-trained-models)
 
 # Predicted results
-HF-FCN16-results
-Mnih13-Machine-results
+HF-FCN16-results   <br />
+Mnih13-Machine-results   <br />
 [Saito16-Multiple-results](https://github.com/mitmul/ssai-cnn/wiki/Predicted-results)
 
 # Reference

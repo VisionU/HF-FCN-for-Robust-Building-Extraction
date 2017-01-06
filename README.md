@@ -9,10 +9,10 @@ This is a state-of-the-art project for building extraction in high resolution re
 
 # Create Dataset
   $ sh shells/download_minh_dataset.sh  <br />
-  $ python scripts/create_dataset_256.py <br />
+  $ python scripts/create_dataset_256.py <br />
   
 # Start Training
-  $ cd models/HF-FCN_Models/BasicNet/  <br />  
+  $ cd models/HF-FCN_Models/BasicNet/ <br />  
   $ nohup python solve.py& <br />
 
 # Prediction

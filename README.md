@@ -8,4 +8,20 @@ This is a state-of-the-art project for building extraction in high resolution re
 - CUDNN V5.0
 
 # Create Dataset
-$ 
+  $ sh download_minh_dataset.sh
+  $ python 
+  
+# Start Training
+
+# Prediction
+
+# Evaluation
+
+# Results Display
+
+# Pre-trained models and Predicted results
+
+
+# Reference
+If you use this code for your project, please cite this conference paper:
+Tongchun Zuo, Juntao Feng, Xuejin Chen. "HF-FCN: Hierarchically Fused Fully Convolutional Network for Robust Building Extraction". Asian Conference of Computer Vision. 2016. 

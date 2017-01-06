@@ -2,7 +2,7 @@ This is a state-of-the-art project for building extraction in high resolution re
 
 # Requirements
 - Last version caffe
-- OpenCV 3.0.0
+- OpenCV 3.1.0
 - NumPy
 - CUDA V8.0
 - CUDNN V5.0
@@ -30,17 +30,24 @@ $ python ../../scripts/test_evaluation.py   <br />
 	--result_dir prediction_12000   <br />
 
 # Results Display
-|                                                | Recall ($\rho$ = 3) | Recall ($\rho$ = 0) | Time (s) |
+|                                                | Recall ($$\rho$$ = 3) | Recall ($$\rho$$ = 0) | Time (s) |
 |------------------------------------------------|---------------------|---------------------|----------|
 | Mnih-CNN \cite{Mnih2013Machine}                | 0.9271              | 0.7661              | 8.70     |
 | Mnih-CNN+CRF \cite{Mnih2013Machine}            | 0.9282              | 0.7638              | 26.60    |
 | Saito-multi-MA \cite{Saito2016Multiple}        | 0.9503              | 0.7873              | 67.72    |
-| Saito-multi-MA$\&$CIS \cite{Saito2016Multiple} | 0.9509              | 0.7872              | 67.84    |
-| *Ours (HF-FCN)                               | 0.9643              | 0.8424              |   1.07*   |
+| Saito-multi-MA&CIS \cite{Saito2016Multiple} | 0.9509              | 0.7872              | 67.84    |
+| Ours (HF-FCN)                                  | 0.9643              | 0.8424              |   1.07   |
 
 
-# Pre-trained models and Predicted results
+# Pre-trained models
+HF-FCN16-iter-12000.caffemodel
+Minh13-Machine.caffemodel
+[Saito16-Multiple-caffemodels](https://github.com/mitmul/ssai-cnn/wiki/Pre-trained-models)
 
+# Predicted results
+HF-FCN16-results
+Mnih13-Machine-results
+[Saito16-Multiple-results](https://github.com/mitmul/ssai-cnn/wiki/Predicted-results)
 
 # Reference
 If you use this code for your project, please cite this conference paper:

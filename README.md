@@ -17,15 +17,21 @@ $ cd models/HF-FCN_Models/BasicNet/  <br />
 $ nohup python solve.py&  <br />
 
 # Prediction
-$ cd results/
-$ python ../scripts/test_prediction.py --model ../models/predict.prototxt --weight ../modles/snapshots/BuildingDetection_iter_12000.caffemodel --img_dir /data/mass_buildings/test/sat
+$ cd results/   <br />
+$ python ../scripts/test_prediction.py   <br />
+         --model ../models/predict.prototxt   <br />
+	 --weight ../modles/snapshots/BuildingDetection_iter_12000.caffemodel   <br />
+	 --img_dir /data/mass_buildings/test/sat   <br />
 
 # Evaluation
-$ cd results/prediction_12000
-$ python ../../scripts/test_evaluation.py --map_dir /data/mass_buildings/test/map --result_dir prediction_12000 
+$ cd results/prediction_12000   <br />
+$ python ../../scripts/test_evaluation.py   <br />
+	--map_dir /data/mass_buildings/test/map   <br />
+	--result_dir prediction_12000   <br />
 
 # Results Display
-    \begin{table} 
+$$latex
+\begin{table} 
     \centering
 	\caption{Performance comparison with \cite{Mnih2013Machine,Saito2016Multiple}. Recall here  means recall at breakeven points. Time is computed in the same computer with a single NVIDIA Titan 12GB GPU.}
 	\begin{tabular}{L{38mm}C{26mm}C{26mm}C{26mm}}     
@@ -41,7 +47,7 @@ $ python ../../scripts/test_evaluation.py --map_dir /data/mass_buildings/test/ma
 	\end{tabular}
 	\label{tab:PerformanceComparision}
 	\end{table}  
-
+$$
 # Pre-trained models and Predicted results
 
 

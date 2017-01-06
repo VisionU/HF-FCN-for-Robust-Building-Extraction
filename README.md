@@ -3,10 +3,33 @@ This is a state-of-the-art project for building extraction in high resolution re
 # Requirements
 - Last version caffe
 - OpenCV 2.4.13
-- NumPy
-- Boost 1.59.0
 - CUDA V8.0
 - CUDNN V5.0
+- Boost 1.59.0
+- Boost.NumPy
+
+## Boost 1.59.0
+$ tar zxvf boost_1_59_0.tar.gz <br />
+$ cd boost_1_59_0 <br />
+$ ./bootstrap.sh --with-libraries=all --with-toolset=gcc <br />
+$ ./b2 toolset=gcc <br />
+$ sudo ./b2 install --prefix=/usr <br />
+$ sudo ldconfig
+
+## Boost.NumPy
+$ git clone https://github.com/ndarray/Boost.NumPy.git <br />
+$ cd Boost.Numpy  <br />
+$ mkdir build <br />
+$ cd build <br />
+$ cmake ..   <br />
+$ vim ../CMakeLists.txt   <br />
+add some codes before find_package(Boost COMPONENTS Python REQUIRED)  <br />
+set(BOOST_ROOT “/usr/include/boost”)  <br />
+set(Boost_LIBRARIES “/usr/include/boost/lib”)   <br />
+set(Boost_INCLUDE_DIRS “/usr/include/boost/include”)  <br />
+set(BOOST_LIBRARYDIR “/usr/include/boost/lib”)  <br />
+$ make <br />
+$ make install 
 
 # Create Dataset
 $ sh shells/download_minh_dataset.sh  <br />

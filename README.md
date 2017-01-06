@@ -19,18 +19,18 @@ $ nohup python solve.py&  <br />
 # Prediction
 $ cd results/   <br />
 $ python ../scripts/test_prediction.py   <br />
-         --model ../models/predict.prototxt   <br />
-	 --weight ../modles/snapshots/BuildingDetection_iter_12000.caffemodel   <br />
-	 --img_dir /data/mass_buildings/test/sat   <br />
+ \qquad        --model ../models/predict.prototxt   <br />
+ \qquad	 --weight ../modles/snapshots/BuildingDetection_iter_12000.caffemodel   <br />
+ \qquad	 --img_dir /data/mass_buildings/test/sat   <br />
 
 # Evaluation
 $ cd results/prediction_12000   <br />
 $ python ../../scripts/test_evaluation.py   <br />
-	--map_dir /data/mass_buildings/test/map   <br />
-	--result_dir prediction_12000   <br />
+\qquad	--map_dir /data/mass_buildings/test/map   <br />
+\qquad	--result_dir prediction_12000   <br />
 
 # Results Display
-|                                                | Recall ($$\rho$$ = 3) | Recall ($$\rho$$ = 0) | Time (s) |
+|                                                | Recall ( \rho = 3) | Recall ( \rho = 0) | Time (s) |
 |------------------------------------------------|---------------------|---------------------|----------|
 | Mnih-CNN \cite{Mnih2013Machine}                | 0.9271              | 0.7661              | 8.70     |
 | Mnih-CNN+CRF \cite{Mnih2013Machine}            | 0.9282              | 0.7638              | 26.60    |

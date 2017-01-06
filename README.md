@@ -31,23 +31,15 @@ $ python ../../scripts/test_evaluation.py   <br />
 
 # Results Display
 $$latex
-\begin{table} 
-    \centering
-	\caption{Performance comparison with \cite{Mnih2013Machine,Saito2016Multiple}. Recall here  means recall at breakeven points. Time is computed in the same computer with a single NVIDIA Titan 12GB GPU.}
-	\begin{tabular}{L{38mm}C{26mm}C{26mm}C{26mm}}     
-	\toprule
-	& Recall ($\rho$ = 3) & Recall ($\rho$ = 0)& Time (s)\\
-	\midrule
-	Mnih-CNN \cite{Mnih2013Machine} & 0.9271 & 0.7661 & 8.70  \\ 
-	Mnih-CNN+CRF \cite{Mnih2013Machine} & 0.9282 & 0.7638 & 26.60\\ 
-	Saito-multi-MA \cite{Saito2016Multiple} & 0.9503 & 0.7873 & 67.72 \\
-	Saito-multi-MA$\&$CIS \cite{Saito2016Multiple} & 0.9509 & 0.7872 & 67.84 \\
-	Ours (HF-FCN) & $\bm{0.9643}$ & $\bm{0.8424}$ & $\bm{1.07}$\\
-	\bottomrule
-	\end{tabular}
-	\label{tab:PerformanceComparision}
-	\end{table}  
+|                                                | Recall ($\rho$ = 3) | Recall ($\rho$ = 0) | Time (s) |
+|------------------------------------------------|---------------------|---------------------|----------|
+| Mnih-CNN \cite{Mnih2013Machine}                | 0.9271              | 0.7661              | 8.70     |
+| Mnih-CNN+CRF \cite{Mnih2013Machine}            | 0.9282              | 0.7638              | 26.60    |
+| Saito-multi-MA \cite{Saito2016Multiple}        | 0.9503              | 0.7873              | 67.72    |
+| Saito-multi-MA$\&$CIS \cite{Saito2016Multiple} | 0.9509              | 0.7872              | 67.84    |
+| Ours (HF-FCN)                                  | 0.9643              | 0.8424              | 1.07     |
 $$
+
 # Pre-trained models and Predicted results
 
 

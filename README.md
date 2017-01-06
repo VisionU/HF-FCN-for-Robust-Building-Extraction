@@ -8,13 +8,13 @@ This is a state-of-the-art project for building extraction in high resolution re
 - CUDNN V5.0
 
 # Create Dataset
-  $ sh shells/download_minh_dataset.sh  \
-  $ python scripts/create_dataset_256.py \  
+  $ sh shells/download_minh_dataset.sh  <br />
+  $ python scripts/create_dataset_256.py <br />
   
 # Start Training
-  $ cd models/HF-FCN_Models/BasicNet/  
+  $ cd models/HF-FCN_Models/BasicNet/  <br />
   
-  $ nohup python solve.py&
+  $ nohup python solve.py& <br />
 
 # Prediction
 

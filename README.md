@@ -19,7 +19,7 @@ $ nohup python solve.py&  <br />
 # Prediction
 $ cd results/   <br />
 $ python ../scripts/test_prediction.py   <br />
- \qquad        --model ../models/predict.prototxt   <br />
+ $\qquad$   --model ../models/predict.prototxt   <br />
  \qquad	 --weight ../modles/snapshots/BuildingDetection_iter_12000.caffemodel   <br />
  \qquad	 --img_dir /data/mass_buildings/test/sat   <br />
 

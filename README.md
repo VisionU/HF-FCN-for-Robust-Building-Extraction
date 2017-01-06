@@ -10,7 +10,7 @@ This is a state-of-the-art project for building extraction in high resolution re
 # Create Dataset
 $ sh shells/download_minh_dataset.sh  <br />
 $ python scripts/create_dataset_256.py  <br />
-$ python scripts/verify_dataset.py -d /data/mass_building/lmdb/train/  <br />
+$ python scripts/verify_dataset.py -d /data/mass_building/lmdb/train_sat_256  <br />
   
 # Start Training
 $ cd models/HF-FCN_Models/BasicNet/  <br />
@@ -19,8 +19,8 @@ $ nohup python solve.py&  <br />
 # Prediction
 $ cd results/   <br />
 $ python ../scripts/test_prediction.py   <br />
- $\qquad$   --model ../models/predict.prototxt   <br />
- \qquad	 --weight ../modles/snapshots/BuildingDetection_iter_12000.caffemodel   <br />
+ <\qquad>   --model ../models/predict.prototxt   <br />
+ <\qquad>	 --weight ../weights/HF-FCN_iter_12000.caffemodel   <br />
  \qquad	 --img_dir /data/mass_buildings/test/sat   <br />
 
 # Evaluation

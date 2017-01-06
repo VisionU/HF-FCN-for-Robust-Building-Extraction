@@ -2,7 +2,7 @@ This is a state-of-the-art project for building extraction in high resolution re
 
 # Requirements
 - Last version caffe
-- OpenCV 3.1.0
+- OpenCV 2.4.13
 - NumPy
 - Boost 1.59.0
 - CUDA V8.0

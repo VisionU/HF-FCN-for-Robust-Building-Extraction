@@ -1,0 +1,159 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec732059901/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec732059901.dir/build.make CMakeFiles/cmTryCompileExec732059901.dir/build
+make[1]: Entering directory `/home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec732059901.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec732059901.dir/CheckSymbolExists.c.o   -c /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec732059901
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec732059901.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec732059901.dir/CheckSymbolExists.c.o  -o cmTryCompileExec732059901 -rdynamic 
+CMakeFiles/cmTryCompileExec732059901.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec732059901] Error 1
+make[1]: Leaving directory `/home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec732059901/fast] Error 2
+
+File /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2874289454/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2874289454.dir/build.make CMakeFiles/cmTryCompileExec2874289454.dir/build
+make[1]: Entering directory `/home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2874289454.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2874289454.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2874289454
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2874289454.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2874289454.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2874289454 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2874289454] Error 1
+make[1]: Leaving directory `/home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2874289454/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3626931350/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3626931350.dir/build.make CMakeFiles/cmTryCompileExec3626931350.dir/build
+make[1]: Entering directory `/home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3626931350.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3626931350.dir/CheckSymbolExists.c.o   -c /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3626931350
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3626931350.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3626931350.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3626931350 -rdynamic 
+CMakeFiles/cmTryCompileExec3626931350.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3626931350] Error 1
+make[1]: Leaving directory `/home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3626931350/fast] Error 2
+
+File /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3986093260/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3986093260.dir/build.make CMakeFiles/cmTryCompileExec3986093260.dir/build
+make[1]: Entering directory `/home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3986093260.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3986093260.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3986093260
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3986093260.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3986093260.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3986093260 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3986093260] Error 1
+make[1]: Leaving directory `/home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3986093260/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1885430190/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1885430190.dir/build.make CMakeFiles/cmTryCompileExec1885430190.dir/build
+make[1]: Entering directory `/home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1885430190.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1885430190.dir/CheckSymbolExists.c.o   -c /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1885430190
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1885430190.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1885430190.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1885430190 -rdynamic 
+CMakeFiles/cmTryCompileExec1885430190.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1885430190] Error 1
+make[1]: Leaving directory `/home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1885430190/fast] Error 2
+
+File /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3168368432/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3168368432.dir/build.make CMakeFiles/cmTryCompileExec3168368432.dir/build
+make[1]: Entering directory `/home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3168368432.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3168368432.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3168368432
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3168368432.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3168368432.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3168368432 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3168368432] Error 1
+make[1]: Leaving directory `/home/caffe_tools/caffe/caffe-fcn-master/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3168368432/fast] Error 2
+
+

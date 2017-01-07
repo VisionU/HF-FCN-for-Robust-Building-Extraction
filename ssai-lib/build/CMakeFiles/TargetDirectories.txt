@@ -1,0 +1,2 @@
+/home/ztc/BuildingExtractionProject/accv2016_HF-FCN/lib/build/CMakeFiles/calc_mean_stddev.dir
+/home/ztc/BuildingExtractionProject/accv2016_HF-FCN/lib/build/CMakeFiles/ssai.dir

@@ -28,8 +28,14 @@ set(BOOST_ROOT “/usr/include/boost”)  <br />
 set(Boost_LIBRARIES “/usr/include/boost/lib”)   <br />
 set(Boost_INCLUDE_DIRS “/usr/include/boost/include”)  <br />
 set(BOOST_LIBRARYDIR “/usr/include/boost/lib”)  <br />
-$ make <br />
-$ make install 
+$ sudo make <br />
+$ sudo make install 
+
+## Make ssai-lib
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make 
 
 # Create Dataset
 $ sh shells/download_minh_dataset.sh  <br />

@@ -10,65 +10,65 @@ This is a state-of-the-art project for building extraction in high resolution re
 
 ## Boost 1.59.0
 ```sh
- tar zxvf boost_1_59_0.tar.gz 
- cd boost_1_59_0 
- ./bootstrap.sh --with-libraries=all --with-toolset=gcc 
- ./b2 toolset=gcc 
- sudo ./b2 install --prefix=/usr 
- sudo ldconfig
+tar zxvf boost_1_59_0.tar.gz 
+cd boost_1_59_0 
+./bootstrap.sh --with-libraries=all --with-toolset=gcc 
+./b2 toolset=gcc 
+sudo ./b2 install --prefix=/usr 
+sudo ldconfig
 ```
 
 ## Boost.NumPy
 ```sh
-	git clone https://github.com/ndarray/Boost.NumPy.git 
-	cd Boost.Numpy  
-	mkdir build 
-	cd build 
-	cmake ..   
-	vim ../CMakeLists.txt   
-	
-	add some codes before find_package(Boost COMPONENTS Python REQUIRED)  
-	set(BOOST_ROOT “/usr/include/boost”) 
-	set(Boost_LIBRARIES “/usr/include/boost/lib”)   
-	set(Boost_INCLUDE_DIRS “/usr/include/boost/include”) 
-	set(BOOST_LIBRARYDIR “/usr/include/boost/lib”) 
-	
-	sudo make 
-	sudo make install 
+git clone https://github.com/ndarray/Boost.NumPy.git 
+cd Boost.Numpy  
+mkdir build 
+cd build 
+cmake ..   
+vim ../CMakeLists.txt   
+
+add some codes before find_package(Boost COMPONENTS Python REQUIRED)  
+set(BOOST_ROOT “/usr/include/boost”) 
+set(Boost_LIBRARIES “/usr/include/boost/lib”)   
+set(Boost_INCLUDE_DIRS “/usr/include/boost/include”) 
+set(BOOST_LIBRARYDIR “/usr/include/boost/lib”) 
+
+sudo make 
+sudo make install 
 ```
 ## Make ssai-lib
 ```sh
- mkdir build
- cd build
- cmake ..
- make 
+mkdir build
+cd build
+cmake ..
+make 
 ```
 # Create Dataset
 ```sh
- sh shells/download_minh_dataset.sh  
- python scripts/create_dataset_256.py  
- python scripts/verify_dataset.py -d /data/mass_building/lmdb/train_sat_256 
+sh shells/download_minh_dataset.sh  
+python scripts/create_dataset_256.py  
+python scripts/verify_dataset.py -d /data/mass_building/lmdb/train_sat_256 
 ```  
 # Start Training
 ```sh
- cd models/HF-FCN_Models/BasicNet/  
- nohup python solve.py& 
+cd models/HF-FCN_Models/BasicNet/  
+nohup python solve.py& 
 ```
 
 # Prediction
 ```
-  cd results/  
-  python ../scripts/run_prediction.py 
-           --model ../models/HF-FCN_Models/BasicNet/predict.prototxt  
- 	         --weight ../weights/HF-FCN_iter_12000.caffemodel  
-      	   --img_dir /data/mass_buildings/source/test/sat  
+cd results/  
+python ../scripts/run_prediction.py 
+				 --model ../models/HF-FCN_Models/BasicNet/predict.prototxt  
+				 --weight ../weights/HF-FCN_iter_12000.caffemodel  
+				 --img_dir /data/mass_buildings/source/test/sat  
 ```
 # Evaluation
 ```sh
- cd results/prediction_12000   
- python ../../scripts/test_evaluation.py   
-				--map_dir /data/mass_buildings/test/map   
-				--result_dir prediction_12000  
+cd results/prediction_12000   
+python ../../scripts/test_evaluation.py   
+			--map_dir /data/mass_buildings/test/map   
+			--result_dir prediction_12000  
 ```
 # Results Display
 |                                                | Recall ($$ \rho = 3 $$) | Recall ( \rho = 0) | Time (s) |

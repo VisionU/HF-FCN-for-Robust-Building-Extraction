@@ -7,6 +7,7 @@ This is a state-of-the-art project for building extraction in high resolution re
 - CUDNN V5.0
 - Boost 1.59.0
 - Boost.NumPy
+- ssai-lib
 
 ## Boost 1.59.0
 ```sh
@@ -36,7 +37,7 @@ set(BOOST_LIBRARYDIR “/usr/include/boost/lib”)
 sudo make 
 sudo make install 
 ```
-## Make ssai-lib
+## ssai-lib
 ```sh
 mkdir build
 cd build
@@ -56,7 +57,7 @@ nohup python solve.py&
 ```
 
 # Prediction
-```
+```sh
 cd results/  
 python ../scripts/run_prediction.py 
 				 --model ../models/HF-FCN_Models/BasicNet/predict.prototxt  

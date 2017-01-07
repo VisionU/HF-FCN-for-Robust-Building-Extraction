@@ -92,5 +92,5 @@ Mnih13-Machine-results   <br />
 [Saito16-Multiple-results](https://github.com/mitmul/ssai-cnn/wiki/Predicted-results)
 
 # Reference
-If you use this code for your project, please cite this conference paper:
+If you use this code for your project, please cite this conference paper:  <br />
 Tongchun Zuo, Juntao Feng, Xuejin Chen. "HF-FCN: Hierarchically Fused Fully Convolutional Network for Robust Building Extraction". Asian Conference of Computer Vision. 2016. 

@@ -41,11 +41,11 @@ $ cd models/HF-FCN_Models/BasicNet/  <br />
 $ nohup python solve.py&  <br />
 
 # Prediction
-$ cd results/   <br />
-$ python ../scripts/run_prediction.py   <br />
- \qquad  --model ../models/HF-FCN_Models/BasicNet/predict.prototxt   <br />
- \qquad	 --weight ../weights/HF-FCN_iter_12000.caffemodel   <br />
- \qquad	 --img_dir /data/mass_buildings/source/test/sat   <br />
+$ cd results/   <br />
+> $ python ../scripts/run_prediction.py   <br />
+           --model ../models/HF-FCN_Models/BasicNet/predict.prototxt   <br />
+ 	         --weight ../weights/HF-FCN_iter_12000.caffemodel   <br />
+      	   --img_dir /data/mass_buildings/source/test/sat   <br />
 
 # Evaluation
 $ cd results/prediction_12000   <br />

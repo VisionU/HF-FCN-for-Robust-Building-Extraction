@@ -68,7 +68,7 @@ python ../scripts/run_prediction.py
 ```sh
 cd results/prediction_12000   
 python ../../scripts/test_evaluation.py   
-			--map_dir /data/mass_buildings/test/map   
+			--map_dir /data/mass_buildings/source/test/map   
 			--result_dir prediction_12000  
 ```
 # Results Display

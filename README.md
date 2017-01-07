@@ -9,57 +9,67 @@ This is a state-of-the-art project for building extraction in high resolution re
 - Boost.NumPy
 
 ## Boost 1.59.0
-$ tar zxvf boost_1_59_0.tar.gz <br />
-$ cd boost_1_59_0 <br />
-$ ./bootstrap.sh --with-libraries=all --with-toolset=gcc <br />
-$ ./b2 toolset=gcc <br />
-$ sudo ./b2 install --prefix=/usr <br />
-$ sudo ldconfig
+```sh
+ tar zxvf boost_1_59_0.tar.gz 
+ cd boost_1_59_0 
+ ./bootstrap.sh --with-libraries=all --with-toolset=gcc 
+ ./b2 toolset=gcc 
+ sudo ./b2 install --prefix=/usr 
+ sudo ldconfig
+```
 
 ## Boost.NumPy
-$ git clone https://github.com/ndarray/Boost.NumPy.git <br />
-$ cd Boost.Numpy  <br />
-$ mkdir build <br />
-$ cd build <br />
-$ cmake ..   <br />
-$ vim ../CMakeLists.txt   <br />
-add some codes before find_package(Boost COMPONENTS Python REQUIRED)  <br />
-set(BOOST_ROOT “/usr/include/boost”)  <br />
-set(Boost_LIBRARIES “/usr/include/boost/lib”)   <br />
-set(Boost_INCLUDE_DIRS “/usr/include/boost/include”)  <br />
-set(BOOST_LIBRARYDIR “/usr/include/boost/lib”)  <br />
-$ sudo make <br />
-$ sudo make install 
-
+```sh
+	git clone https://github.com/ndarray/Boost.NumPy.git 
+	cd Boost.Numpy  
+	mkdir build 
+	cd build 
+	cmake ..   
+	vim ../CMakeLists.txt   
+	
+	add some codes before find_package(Boost COMPONENTS Python REQUIRED)  
+	set(BOOST_ROOT “/usr/include/boost”) 
+	set(Boost_LIBRARIES “/usr/include/boost/lib”)   
+	set(Boost_INCLUDE_DIRS “/usr/include/boost/include”) 
+	set(BOOST_LIBRARYDIR “/usr/include/boost/lib”) 
+	
+	sudo make 
+	sudo make install 
+```
 ## Make ssai-lib
-$ mkdir build
-$ cd build
-$ cmake ..
-$ make 
-
+```sh
+ mkdir build
+ cd build
+ cmake ..
+ make 
+```
 # Create Dataset
-$ sh shells/download_minh_dataset.sh  <br />
-$ python scripts/create_dataset_256.py  <br />
-$ python scripts/verify_dataset.py -d /data/mass_building/lmdb/train_sat_256  <br />
-  
+```sh
+ sh shells/download_minh_dataset.sh  
+ python scripts/create_dataset_256.py  
+ python scripts/verify_dataset.py -d /data/mass_building/lmdb/train_sat_256 
+```  
 # Start Training
-$ cd models/HF-FCN_Models/BasicNet/  <br />
-$ nohup python solve.py&  <br />
+```sh
+ cd models/HF-FCN_Models/BasicNet/  
+ nohup python solve.py& 
+```
 
 # Prediction
 ```
-  cd results/   <br />
-  python ../scripts/run_prediction.py   <br />
-           --model ../models/HF-FCN_Models/BasicNet/predict.prototxt   <br />
- 	         --weight ../weights/HF-FCN_iter_12000.caffemodel   <br />
-      	   --img_dir /data/mass_buildings/source/test/sat   <br />
+  cd results/  
+  python ../scripts/run_prediction.py 
+           --model ../models/HF-FCN_Models/BasicNet/predict.prototxt  
+ 	         --weight ../weights/HF-FCN_iter_12000.caffemodel  
+      	   --img_dir /data/mass_buildings/source/test/sat  
 ```
 # Evaluation
-> cd results/prediction_12000   <br />
-  python ../../scripts/test_evaluation.py   <br />
-	--map_dir /data/mass_buildings/test/map   <br />
-	--result_dir prediction_12000   <br />
-
+```sh
+ cd results/prediction_12000   
+ python ../../scripts/test_evaluation.py   
+				--map_dir /data/mass_buildings/test/map   
+				--result_dir prediction_12000  
+```
 # Results Display
 |                                                | Recall ($$ \rho = 3 $$) | Recall ( \rho = 0) | Time (s) |
 |------------------------------------------------|---------------------|---------------------|----------|

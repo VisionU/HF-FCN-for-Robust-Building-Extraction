@@ -42,7 +42,7 @@ $ nohup python solve.py&  <br />
 
 # Prediction
 $ cd results/   <br />
-> $ python ../scripts/run_prediction.py   <br />
+$ python ../scripts/run_prediction.py   <br />
            --model ../models/HF-FCN_Models/BasicNet/predict.prototxt   <br />
  	         --weight ../weights/HF-FCN_iter_12000.caffemodel   <br />
       	   --img_dir /data/mass_buildings/source/test/sat   <br />
@@ -50,8 +50,8 @@ $ cd results/   <br />
 # Evaluation
 $ cd results/prediction_12000   <br />
 $ python ../../scripts/test_evaluation.py   <br />
-\qquad	--map_dir /data/mass_buildings/test/map   <br />
-\qquad	--result_dir prediction_12000   <br />
+	--map_dir /data/mass_buildings/test/map   <br />
+	--result_dir prediction_12000   <br />
 
 # Results Display
 |                                                | Recall ( \rho = 3) | Recall ( \rho = 0) | Time (s) |

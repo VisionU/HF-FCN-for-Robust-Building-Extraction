@@ -105,8 +105,8 @@ Minh13-Machine.caffemodel   <br />
 [Saito16-Multiple-caffemodels](https://github.com/mitmul/ssai-cnn/wiki/Pre-trained-models)
 
 # Predicted results
-HF-FCN16-results   <br />
-Mnih13-Machine-results   <br />
+[HF-FCN16-results](https://github.com/tczuo/HF-FCN-for-Robust-Building-Extraction/tree/master/results/whole_image_results/Zuo-HF-FCN-ACCV16)   <br />
+[Mnih13-Machine-results]   <br />
 [Saito16-Multiple-results](https://github.com/mitmul/ssai-cnn/wiki/Predicted-results)
 
 # Reference

@@ -100,7 +100,7 @@ sh run_recall_comp_for_challenge_patches.sh
 
 
 # Pre-trained models
-HF-FCN16-iter-12000.caffemodel   <br />
+[HF-FCN16-iter-12000.caffemodel](https://github.com/tczuo/HF-FCN-for-Robust-Building-Extraction/tree/master/weights) <br />
 Minh13-Machine.caffemodel   <br />
 [Saito16-Multiple-caffemodels](https://github.com/mitmul/ssai-cnn/wiki/Pre-trained-models)
 

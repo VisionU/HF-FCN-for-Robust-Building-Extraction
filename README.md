@@ -71,7 +71,10 @@ python ../../scripts/run_evaluation.py
 			--map_dir /data/mass_buildings/source/test/map   
 			--result_dir HF-FCN_whole_image_prediction_12000
 ```
-# Results Display
+
+# Results Comparision
+
+
 |                                                | Recall ($$ \rho = 3 $$) | Recall ( \rho = 0) | Time (s) |
 |------------------------------------------------|---------------------|---------------------|----------|
 | Mnih-CNN \cite{Mnih2013Machine}                | 0.9271              | 0.7661              | 8.70     |

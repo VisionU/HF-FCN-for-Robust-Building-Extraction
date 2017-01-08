@@ -106,7 +106,7 @@ Minh13-Machine.caffemodel   <br />
 
 # Predicted results
 [HF-FCN16-results](https://github.com/tczuo/HF-FCN-for-Robust-Building-Extraction/tree/master/results/whole_image_results/Zuo-HF-FCN-ACCV16)   <br />
-[Mnih13-Machine-results]   <br />
+[Mnih13-Machine-results](https://github.com/tczuo/HF-FCN-for-Robust-Building-Extraction/tree/master/results/whole_image_results/Mnih-Machine-PHDthesis13)   <br />
 [Saito16-Multiple-results](https://github.com/mitmul/ssai-cnn/wiki/Predicted-results)
 
 # Reference

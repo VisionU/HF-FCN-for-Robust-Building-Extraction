@@ -39,6 +39,7 @@ sudo make install
 ```
 ## ssai-lib
 ```sh
+cd ssai-lib/
 mkdir build
 cd build
 cmake ..
@@ -73,8 +74,11 @@ python ../../scripts/run_evaluation.py
 ```
 
 # Results Comparision
-
-
+## whole image comparision
+```sh
+cd shells/
+sh run_pr_curve_comparision.sh
+```
 |                                                | Recall ($$ \rho = 3 $$) | Recall ( \rho = 0) | Time (s) |
 |------------------------------------------------|---------------------|---------------------|----------|
 | Mnih-CNN \cite{Mnih2013Machine}                | 0.9271              | 0.7661              | 8.70     |
@@ -82,6 +86,16 @@ python ../../scripts/run_evaluation.py
 | Saito-multi-MA \cite{Saito2016Multiple}        | 0.9503              | 0.7873              | 67.72    |
 | Saito-multi-MA&CIS \cite{Saito2016Multiple} | 0.9509              | 0.7872              | 67.84    |
 | Ours (HF-FCN)                                  | 0.9643              | 0.8424              |   1.07   |
+
+## challenge patches comparision
+```sh
+cd shells/
+sh run_recall_comp_for_challenge_patches.sh
+```
+| Image ID                                    | 01    | 02    | 03    | 04    | 05    | 06    | 07    | mean  |
+|---------------------------------------------|-------|-------|-------|-------|-------|-------|-------|-------|
+| Mnih-CNN+CRF\cite{Mnih2013Machine\}         | 0.784 | 0.869 | 0.769 | 0.653 | 0.893 | 0.764 | 0.800 | 0.784 |
+| Saito-multi-MA&CIS\cite{Saito2016Multiple\} | 0.773 | 0.915 | 0.857 | 0.789 | 0.945 | 0.773 | 0.830 | 0.851 |
 
 
 # Pre-trained models

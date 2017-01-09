@@ -79,7 +79,7 @@ python ../../scripts/run_evaluation.py
 cd shells/
 sh run_pr_curve_comparision.sh
 ```
-|                                                | Recall ($$ \rho = 3 $$) | Recall ( \rho = 0) | Time (s) |
+|                                                | Recall ( \rho = 3 ) | Recall ( \rho = 0) | Time (s) |
 |------------------------------------------------|---------------------|---------------------|----------|
 | Mnih-CNN \cite{Mnih2013Machine}                | 0.9271              | 0.7661              | 8.70     |
 | Mnih-CNN+CRF \cite{Mnih2013Machine}            | 0.9282              | 0.7638              | 26.60    |

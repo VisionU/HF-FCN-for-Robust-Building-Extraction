@@ -61,16 +61,16 @@ nohup python solve.py&
 ```sh
 cd results/  
 python ../scripts/run_prediction.py 
-				 --model ../models/HF-FCN_Models/BasicNet/predict.prototxt  
-				 --weight ../weights/HF-FCN_iter_12000.caffemodel  
-				 --img_dir /data/mass_buildings/source/test/sat  
+		 --model ../models/HF-FCN_Models/BasicNet/predict.prototxt  
+		 --weight ../weights/HF-FCN_iter_12000.caffemodel  
+		 --img_dir /data/mass_buildings/source/test/sat  
 ```
 # Evaluation
 ```sh
 cd results/prediction_12000   
 python ../../scripts/run_evaluation.py   
-			--map_dir /data/mass_buildings/source/test/map   
-			--result_dir HF-FCN_whole_image_prediction_12000
+		--map_dir /data/mass_buildings/source/test/map   
+		--result_dir HF-FCN_whole_image_prediction_12000
 ```
 
 # Results Comparision
@@ -85,7 +85,7 @@ sh run_pr_curve_comparision.sh
 | Mnih-CNN+CRF \cite{Mnih2013Machine}            | 0.9282              | 0.7638              | 26.60    |
 | Saito-multi-MA \cite{Saito2016Multiple}        | 0.9503              | 0.7873              | 67.72    |
 | Saito-multi-MA&CIS \cite{Saito2016Multiple} | 0.9509              | 0.7872              | 67.84    |
-| Ours (HF-FCN)                                  | 0.9643              | 0.8424              |   1.07   |
+| *Ours (HF-FCN)                                  | 0.9643              | 0.8424              |   1.07   |*
 
 ## challenge patches comparision
 ```sh
@@ -96,7 +96,7 @@ sh run_recall_comp_for_challenge_patches.sh
 |-----------------------------------------------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|
 | Mnih-CNN+CRF\cite\{Mnih2013Machine\}          | 0.784          | 0.869          | 0.769          | 0.653          | 0.893          | 0.764          | 0.800          | 0.784          |
 | Saito-multi-MA\&CIS\cite\{Saito2016Multiple\} | 0.773          | 0.915          | 0.857          | 0.789          | 0.945          | 0.773          | 0.830          | 0.851          |
-| Ours (HF-FCN)                        | 0.874 | 0.964 | 0.899 | 0.901 | 0.986 | 0.840| 0.851 | 0.911 |
+| *Ours (HF-FCN)                        | 0.874 | 0.964 | 0.899 | 0.901 | 0.986 | 0.840| 0.851 | 0.911 |*
 
 
 # Pre-trained models
@@ -111,4 +111,11 @@ Minh13-Machine.caffemodel   <br />
 
 # Reference
 If you use this code for your project, please cite this conference paper:  <br />
-Tongchun Zuo, Juntao Feng, Xuejin Chen. "HF-FCN: Hierarchically Fused Fully Convolutional Network for Robust Building Extraction". Asian Conference of Computer Vision. 2016. 
+@inproceedings{zuo2016hf,
+  title={HF-FCN: Hierarchically Fused Fully Convolutional Network for Robust Building Extraction},
+  author={Zuo, Tongchun and Feng, Juntao and Chen, Xuejin},
+  booktitle={Asian Conference on Computer Vision},
+  pages={291--302},
+  year={2016},
+  organization={Springer}
+}

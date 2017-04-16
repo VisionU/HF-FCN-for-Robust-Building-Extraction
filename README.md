@@ -11,9 +11,12 @@ This is a state-of-the-art project for building extraction in high resolution re
 - ssai-lib
 
 ## caffe-fcn-master
+```sh
 cd cmake 
 cmake ..
 make -j16
+
+```
 
 ## Boost 1.59.0
 ```sh

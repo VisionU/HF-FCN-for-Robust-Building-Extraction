@@ -4,7 +4,7 @@ This is a state-of-the-art project for building extraction in high resolution re
 - caffe-fcn-master
 - OpenCV 2.4.13
 - CUDA V8.0
-- CUDNN V5.0
+- CUDNN V3.0
 - Protobuf 3.2.0 (please use this version, too low will lead to errors, like "_has_bits is not defined in this scope")
 - Boost 1.59.0
 - Boost.NumPy
@@ -76,10 +76,13 @@ python ../scripts/run_prediction.py
 ```
 # Evaluation
 ```sh
-cd results/prediction_12000   
-python ../../scripts/run_evaluation.py   
-		--map_dir /data/mass_buildings/source/test/map   
-		--result_dir HF-FCN_whole_image_prediction_12000
+python  ../scripts/run_evaluation_complex.py  \
+	--gt_dir ../results/GroundTruth   \
+	--pred_dir ../results/whole_image_results/Zuo-HF-FCN-ACCV16  \
+	--pad 0 \
+	--relax 0 \
+	--pr_dir ../results/whole_image_results/PresicionRecallComparision
+
 ```
 
 # Results Comparision

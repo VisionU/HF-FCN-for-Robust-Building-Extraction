@@ -4,7 +4,7 @@ This is a state-of-the-art project for building extraction in high resolution re
 - caffe-fcn-master
 - OpenCV 2.4.13
 - CUDA V8.0
-- CUDNN V3.0
+- CUDNN V5.0
 - Protobuf 3.2.0 (please use this version, too low will lead to errors, like "_has_bits is not defined in this scope")
 - Boost 1.59.0
 - Boost.NumPy

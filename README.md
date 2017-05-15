@@ -57,7 +57,7 @@ make
 # Create Dataset
 ```sh
 sh shells/download_minh_dataset.sh  
-python scripts/create_dataset_256.py  -d /data/mass_building
+python scripts/create_dataset_256.py  -d /data
 python scripts/verify_dataset.py -d /data/mass_building/lmdb/train_sat_256 
 ```  
 # Start Training

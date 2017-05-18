@@ -117,14 +117,14 @@ def create_patches(sat_patch_size, map_patch_size, stride, map_ch,
 if __name__ == '__main__':
          create_patches(256, 256, 64, 1,
                              args.dataset+'/mass_buildings/valid/sat',
-                             args.dataset'/mass_buildings/valid/map',
-                             args.dataset'/mass_buildings/lmdb/valid_sat',
-                             args.dataset'/mass_buildings/lmdb/valid_map')
+                             args.dataset+'/mass_buildings/valid/map',
+                             args.dataset+'/mass_buildings/lmdb/valid_sat',
+                             args.dataset+'/mass_buildings/lmdb/valid_map')
          create_patches(256, 256, 64, 1,
-                     args.dataset'/mass_buildings/train/sat',
-                     args.dataset'/mass_buildings/train/map',
-                     args.dataset'/mass_buildings/lmdb/train_sat',
-                     args.dataset'/mass_buildings/lmdb/train_map')
+                     args.dataset+'/mass_buildings/train/sat',
+                     args.dataset+'/mass_buildings/train/map',
+                     args.dataset+'/mass_buildings/lmdb/train_sat',
+                     args.dataset+'/mass_buildings/lmdb/train_map')
  
 
 
